@@ -1,0 +1,25 @@
+.messgebox {
+  width: 130px;
+  background-color: #42add4;
+  position: sticky;
+  position: fixed;
+  overflow: hidden;
+  bottom: 25px;
+  right: 15px;
+  border-radius: 50px;
+  justify-content: center;
+  display: flex;
+  padding: 0.8%;
+  margin-top: 20px; /* Adjust as needed */
+  /* Add other styles if needed */
+  color: white;
+}
+.launcher-icon {
+  width: 30px;
+  height: 30px;
+}
+.launcher-text {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 10px;
+}

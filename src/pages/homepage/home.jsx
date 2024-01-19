@@ -2,12 +2,13 @@ import React from "react";
 import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
 import "./Home.css";
 import MyBanner from "../../components/banner/Banner";
+import DoneIcon from "@mui/icons-material/Done";
 
 function HomePage() {
   return (
     <div>
       <div className="headingdiv">
-        <h1>HOW IT WORKS.</h1>
+        <h2>HOW IT WORKS.</h2>
         <p>
           Earn Oner Points and redeem them when making purchases, level up your
           member status to <br />
@@ -15,7 +16,7 @@ function HomePage() {
         </p>
       </div>
 
-      <div class="container">
+      <div class="container ">
         <div className="iconsdiv ">
           <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
             <div class="col">
@@ -94,7 +95,7 @@ function HomePage() {
             backgroundColor: "black",
             color: "white",
             borderRadius: 20,
-            padding: 10,
+            padding: 6,
             width: 100,
           }}
         >
@@ -102,14 +103,9 @@ function HomePage() {
         </button>
       </div>
 
-      <p style={{ textAlign: "center", marginBottom: " 4%" }}>
-        Already have an account?<a href="#">Log in</a>
-      </p>
+      <p style={{ textAlign: "center", marginBottom: " 4%" }}></p>
       <div className="seconthead" style={{ textAlign: "center" }}>
-        <h1>HOW TO EARN POINTS.</h1>
-        <p>
-          There are many ways to earn Oner Points. Take a look! It‘s super easy.
-        </p>
+        <h2>HOW TO EARN POINTS.</h2>
       </div>
 
       {/* Second Section start */}
@@ -125,7 +121,7 @@ function HomePage() {
                   />
                 </div>
                 <div className="card-body">
-                  <h6 className="title">Step 1</h6>
+                  <h6 className="title">+350 Points</h6>
                   <p className="card-text">Create an account</p>
                 </div>
               </div>
@@ -139,12 +135,8 @@ function HomePage() {
                   />
                 </div>
                 <div className="card-body">
-                  <h6 className="title">Step 2</h6>
-                  <p className="card-text">
-                    Earn points for
-                    <br />
-                    every $ spent
-                  </p>
+                  <h6 className="title">Up to* 150 Points</h6>
+                  <p className="card-text">Per $1 spent</p>
                 </div>
               </div>
             </div>
@@ -157,12 +149,8 @@ function HomePage() {
                   />
                 </div>
                 <div className="card-body">
-                  <h6 className="title">Step 3</h6>
-                  <p className="card-text">
-                    Level up for
-                    <br />
-                    exclusive perks
-                  </p>
+                  <h6 className="title">+750 Points</h6>
+                  <p className="card-text">Share your birthday</p>
                 </div>
               </div>
             </div>
@@ -175,11 +163,8 @@ function HomePage() {
                   />
                 </div>
                 <div className="card-body">
-                  <h6 className="title">Step 3</h6>
-                  <p className="card-text">
-                    Redeem points &<br />
-                    shop for free
-                  </p>
+                  <h6 className="title">+10,000 Points</h6>
+                  <p className="card-text">Refer a friend</p>
                 </div>
               </div>
             </div>
@@ -189,7 +174,14 @@ function HomePage() {
 
       <div class="container">
         <div className="iconsdiv ">
-          <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3">
+          <div
+            class="row row-cols-2 row-cols-md-2 row-cols-lg-3"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <div class="col">
               <div className="card">
                 <div className="icon">
@@ -199,8 +191,8 @@ function HomePage() {
                   />
                 </div>
                 <div className="card-body">
-                  <h6 className="title">Step 1</h6>
-                  <p className="card-text">Create an account</p>
+                  <h6 className="title">+100 Points</h6>
+                  <p className="card-text">Like us on Facebook</p>
                 </div>
               </div>
             </div>
@@ -213,16 +205,12 @@ function HomePage() {
                   />
                 </div>
                 <div className="card-body">
-                  <h6 className="title">Step 2</h6>
-                  <p className="card-text">
-                    Earn points for
-                    <br />
-                    every $ spent
-                  </p>
+                  <h6 className="title">+100 Points</h6>
+                  <p className="card-text">Follow us on Instagram</p>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col col-md-6 offset-md-3 col-lg-4 offset-lg-0">
               <div className="card">
                 <div className="icon">
                   <img
@@ -231,12 +219,8 @@ function HomePage() {
                   />
                 </div>
                 <div className="card-body">
-                  <h6 className="title">Step 3</h6>
-                  <p className="card-text">
-                    Level up for
-                    <br />
-                    exclusive perks
-                  </p>
+                  <h6 className="title">+100 Points</h6>
+                  <p className="card-text">Follow us on Twitter</p>
                 </div>
               </div>
             </div>
@@ -258,10 +242,6 @@ function HomePage() {
         </button>
       </div>
 
-      <p style={{ textAlign: "center", marginBottom: " 4%" }}>
-        Already have an account?<a href="#">Log in</a>
-      </p>
-
       {/* secondSection end Now */}
 
       {/*third Start */}
@@ -269,7 +249,7 @@ function HomePage() {
         className="seconthead"
         style={{ textAlign: "center", marginBottom: "3%" }}
       >
-        <h1>MEMBER STATUS.</h1>
+        <h2>MEMBER STATUS.</h2>
         <p>
           With every purchase you make, you move one step closer to levelling up
           your exclusive member status.
@@ -281,7 +261,7 @@ function HomePage() {
       <div className="tabledive">
         <table class="table">
           <thead>
-            <tr style={{ borderTop: 0 }}>
+            <tr>
               <th scope="col"></th>
               <th scope="col">
                 <img
@@ -304,8 +284,10 @@ function HomePage() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th></th>
+            <tr style={{ borderTop: 0 }}>
+              <th style={{ borderTop: 0, textAlign: "end", paddingTop: "2%" }}>
+                Spent per calendar year
+              </th>
               <th style={{ backgroundColor: "#8e6339" }}>
                 BRONZE
                 <br />
@@ -324,29 +306,73 @@ function HomePage() {
             </tr>
             <tr>
               <td scope="row">Points per $1 spent</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>100 Points</td>
+              <td>125 Points</td>
+              <td>150 Points</td>
             </tr>
             <tr>
               <td scope="row">Exchange Oner Points for discounts</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td>
+                <DoneIcon />
+              </td>
+              <td>
+                <DoneIcon />
+              </td>
+              <td>
+                <DoneIcon />
+              </td>
             </tr>
             <tr>
               <td scope="row">Birthday offer</td>
-              <td>Larry the Bird</td>
-              <td>@twitter</td>
+              <td>
+                <DoneIcon />
+              </td>
+              <td>
+                <DoneIcon />
+              </td>
+              <td>
+                <DoneIcon />
+              </td>
             </tr>
             <tr>
               <td>Free participation in a yearly giveaway</td>
+              <td>
+                <DoneIcon />
+              </td>
+              <td>
+                <DoneIcon />
+              </td>
+              <td>
+                <DoneIcon />
+              </td>
             </tr>
             <tr>
               <td>Return shipping time (according to T&C)</td>
+              <td>30 days</td>
+              <td>45 days</td>
+              <td>60 days</td>
             </tr>
             <tr>
               <td>Member status entry reward</td>
+              <td style={{ border: "0" }}></td>
+              <td>750 Points</td>
+              <td>1000 Points</td>
+            </tr>
+            <tr>
+              <td>Secret offers</td>
+              <td style={{ border: "0" }}></td>
+              <td style={{ border: "0" }}></td>
+              <td>
+                <DoneIcon />
+              </td>
+            </tr>
+            <tr>
+              <td>Secret offers</td>
+              <td style={{ border: "0" }}></td>
+              <td style={{ border: "0" }}></td>
+              <td>
+                <DoneIcon />
+              </td>
             </tr>
           </tbody>
         </table>
@@ -366,9 +392,6 @@ function HomePage() {
         </button>
       </div>
 
-      <p style={{ textAlign: "center", marginBottom: " 4%" }}>
-        Already have an account?<a href="#">Log in</a>
-      </p>
       {/*third End */}
 
       {/* forth Start */}
@@ -377,7 +400,7 @@ function HomePage() {
         className="seconthead"
         style={{ textAlign: "center", marginBottom: "3%" }}
       >
-        <h1>REFER FRIENDS FOR UP TO $50 OFF.</h1>
+        <h2>REFER FRIENDS FOR UP TO $50 OFF.</h2>
       </div>
 
       <div class="container">
@@ -402,16 +425,16 @@ function HomePage() {
             <div class="col">
               <img
                 class="lazy img-responsive loaded"
-                data-src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/GiftCard_COM_15.png?v=1600256730"
-                src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/GiftCard_COM_15.png?v=1600256730"
+                data-src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/GiftCard_COM_25.png?v=1600256730"
+                src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/GiftCard_COM_25.png?v=1600256730"
                 data-was-processed="true"
               />
             </div>
             <div class="col">
               <img
                 class="lazy img-responsive loaded"
-                data-src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/GiftCard_COM_25.png?v=1600256730"
-                src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/GiftCard_COM_25.png?v=1600256730"
+                data-src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/GiftCard_COM_50.png?v=1600256730"
+                src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/GiftCard_COM_50.png?v=1600256730"
                 data-was-processed="true"
               />
             </div>
@@ -432,9 +455,6 @@ function HomePage() {
         </button>
       </div>
 
-      <p style={{ textAlign: "center", marginBottom: " 4%" }}>
-        Already have an account?<a href="#">Log in</a>
-      </p>
       {/* forth End */}
       <div className="container" style={{ marginBottom: "5%" }}>
         <h4 className="text-center mb-4">FAQ - GENERAL</h4>
@@ -482,151 +502,6 @@ function HomePage() {
         </p>
       </div>
       <MyBanner />
-
-      <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          {/* <!-- Left --> */}
-          <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-          </div>
-          {/* <!-- Left --> */}
-
-          {/* <!-- Right --> */}
-          <div>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-          {/* <!-- Right --> */}
-        </section>
-        {/* <!-- Section: Social media --> */}
-
-        {/* <!-- Section: Links  --> */}
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            {/* <!-- Grid row --> */}
-            <div class="row mt-3">
-              {/* <!-- Grid column --> */}
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                {/* <!-- Content --> */}
-                <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fas fa-gem me-3"></i>Company name
-                </h6>
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
-              </div>
-              {/* <!-- Grid column --> */}
-
-              {/* <!-- Grid column --> */}
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* <!-- Links --> */}
-                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Angular
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    React
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Vue
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Laravel
-                  </a>
-                </p>
-              </div>
-              {/* <!-- Grid column --> */}
-
-              {/* <!-- Grid column --> */}
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* <!-- Links --> */}
-                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Pricing
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Settings
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Orders
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Help
-                  </a>
-                </p>
-              </div>
-              {/* <!-- Grid column --> */}
-
-              {/* <!-- Grid column --> */}
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                {/* <!-- Links --> */}
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p>
-                  <i class="fas fa-home me-3"></i> New York, NY 10012, US
-                </p>
-                <p>
-                  <i class="fas fa-envelope me-3"></i>
-                  info@example.com
-                </p>
-                <p>
-                  <i class="fas fa-phone me-3"></i> + 01 234 567 88
-                </p>
-                <p>
-                  <i class="fas fa-print me-3"></i> + 01 234 567 89
-                </p>
-              </div>
-              {/* <!-- Grid column --> */}
-            </div>
-            {/* <!-- Grid row --> */}
-          </div>
-        </section>
-        {/* <!-- Section: Links  -->
-
-  <!-- Copyright --> */}
-        <div
-          class="text-center p-4"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
-        >
-          © 2021 Copyright:
-          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">
-            MDBootstrap.com
-          </a>
-        </div>
-        {/* <!-- Copyright --> */}
-      </footer>
-      {/* <!-- Footer --> */}
     </div>
   );
 }

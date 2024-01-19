@@ -5,20 +5,20 @@ body {
     "Helvetica Neue", Arial, sans-serif;
 }
 .navbar {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .navbar {
   overflow: hidden;
   height: 50px;
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100%; /* Adjust the z-index based on your layout needs */
+  width: 100%; 
 }
-
 .navbar-brand {
   width: 10%;
   height: fit-content;
-}
-@media only screen and (min-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
+} */

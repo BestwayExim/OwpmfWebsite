@@ -7,6 +7,7 @@ import { Sidenavcontext } from ".";
 import CarouselBar from "./components/carouselview/Carousel";
 import MyBanner from "./components/banner/Banner";
 import HomePage from "./pages/homepage/home";
+import MessageBox from "./components/loyaltyClub/LoyaltyClub";
 
 function App() {
   const { sidenav } = useContext(Sidenavcontext);
@@ -17,6 +18,7 @@ function App() {
       <MyBanner />
       <HomePage />
       <Mysidenav />
+      <MessageBox />
     </>
   );
 }

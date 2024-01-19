@@ -1,10 +1,11 @@
 .mysidnav {
   position: fixed;
   top: 50px;
+  color: white;
   width: 200px;
   color: black;
   height: calc(100vh - 50px);
-  background-color: aqua;
+  background-color: #0e0e0e;
 
   z-index: 1;
   overflow-x: hidden;
@@ -23,6 +24,5 @@
     width: 0;
     height: 0;
     overflow: hidden;
-    background-color: lightgreen;
   }
 }
