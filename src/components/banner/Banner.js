@@ -4,7 +4,7 @@ import "./Banner.css";
 
 function MyBanner() {
   return (
-    <div className='banner'>
+    <div className='banner text-light'>
      {/* <img src="https://www.oneractive.com/cdn/shop/files/ONER_LoyaltyClubHeadBanner_desktop_ms_20200825.png?v=1600256838" className='img1' alt="" /> */}
 
      <div className='text'>
