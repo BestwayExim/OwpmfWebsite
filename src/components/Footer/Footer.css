@@ -1,0 +1,100 @@
+.input-boxs{
+   width: 350px;
+   height: 220px;
+   /* background-color: rgb(134, 134, 136); */
+} 
+.main-contain{
+    display: flex;
+    justify-content: center;
+
+}
+.inpu{
+    width: 70%;
+    height: 35px;
+}
+
+.out-log{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    height: 50px;
+    /* background-color: red; */
+    margin-top: 2px;
+}
+
+.logg{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+.LOG-last{
+    width: 300px;
+    display: flex;
+    justify-content: end;
+}
+.btn-last{
+    border: none;
+    background-color: black;
+    height: 35px;
+    width: 35px;
+
+}
+
+.footerr a{
+    text-decoration: none;
+    
+}
+
+.footerr a:hover{
+    text-decoration: underline;
+}
+
+.list-unstyled li a{
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.top-reward{
+    margin-top: 10px;
+ }
+
+ .top-catogry{
+    margin-top: 10px;
+ }
+
+ .cardd{
+    width: 100%;
+    /* background-color: blue; */
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .pay{
+    width: 10%;
+    height: 25px;
+    /* background-color: aquamarine; */
+ }
+
+ 
+
+
+
+@media (max-width:800px) {
+
+
+
+ 
+ .top-reward{
+    margin-top: 30px;
+ }
+
+  }
+
+
+

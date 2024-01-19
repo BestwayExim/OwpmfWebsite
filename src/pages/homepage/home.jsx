@@ -1,12 +1,12 @@
 import React from "react";
-import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
 import "./Home.css";
 import MyBanner from "../../components/banner/Banner";
+import Footer from "../../components/Footer/Footer";
 
 function HomePage() {
   return (
     <div>
-      <div className="headingdiv">
+      <div className="headingdiv mt-5">
         <h1>HOW IT WORKS.</h1>
         <p>
           Earn Oner Points and redeem them when making purchases, level up your
@@ -26,7 +26,7 @@ function HomePage() {
                     src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_works_01.svg?v=1600248639"
                   />
                 </div>
-                <div className="card-body">
+                <div className="card-body mb-4">
                   <h6 className="title">Step 1</h6>
                   <p className="card-text">Create an account</p>
                 </div>
@@ -40,7 +40,7 @@ function HomePage() {
                     src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_works_02.svg?v=1600248639"
                   />
                 </div>
-                <div className="card-body">
+                <div className="card-body mt-2">
                   <h6 className="title">Step 2</h6>
                   <p className="card-text">
                     Earn points for
@@ -89,23 +89,14 @@ function HomePage() {
         </div>
       </div>
       <div className="buttonDiv">
-        <button
-          style={{
-            backgroundColor: "black",
-            color: "white",
-            borderRadius: 20,
-            padding: 10,
-            width: 100,
-          }}
+        <button className="btns"
         >
           Join Now
         </button>
       </div>
 
-      <p style={{ textAlign: "center", marginBottom: " 4%" }}>
-        Already have an account?<a href="#">Log in</a>
-      </p>
-      <div className="seconthead" style={{ textAlign: "center" }}>
+     
+      <div className="seconthead mt-5" style={{ textAlign: "center" }}>
         <h1>HOW TO EARN POINTS.</h1>
         <p>
           There are many ways to earn Oner Points. Take a look! It‘s super easy.
@@ -124,7 +115,7 @@ function HomePage() {
                     src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_earn_01.svg?v=1600248639"
                   />
                 </div>
-                <div className="card-body">
+                <div className="card-body mb-4">
                   <h6 className="title">Step 1</h6>
                   <p className="card-text">Create an account</p>
                 </div>
@@ -198,7 +189,7 @@ function HomePage() {
                     src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_earn_05.svg?v=1600248639"
                   />
                 </div>
-                <div className="card-body">
+                <div className="card-body mb-4">
                   <h6 className="title">Step 1</h6>
                   <p className="card-text">Create an account</p>
                 </div>
@@ -245,28 +236,20 @@ function HomePage() {
       </div>
 
       <div className="buttonDiv">
-        <button
-          style={{
-            backgroundColor: "black",
-            color: "white",
-            borderRadius: 20,
-            padding: 10,
-            width: 100,
-          }}
+        <button className="btns"
+         
         >
           Join Now
         </button>
       </div>
 
-      <p style={{ textAlign: "center", marginBottom: " 4%" }}>
-        Already have an account?<a href="#">Log in</a>
-      </p>
+     
 
       {/* secondSection end Now */}
 
       {/*third Start */}
       <div
-        className="seconthead"
+        className="seconthead mt-5"
         style={{ textAlign: "center", marginBottom: "3%" }}
       >
         <h1>MEMBER STATUS.</h1>
@@ -353,28 +336,20 @@ function HomePage() {
       </div>
 
       <div className="buttonDiv">
-        <button
-          style={{
-            backgroundColor: "black",
-            color: "white",
-            borderRadius: 20,
-            padding: 10,
-            width: 100,
-          }}
+        <button className="btns"
+         
         >
           Join Now
         </button>
       </div>
 
-      <p style={{ textAlign: "center", marginBottom: " 4%" }}>
-        Already have an account?<a href="#">Log in</a>
-      </p>
+     
       {/*third End */}
 
       {/* forth Start */}
 
       <div
-        className="seconthead"
+        className="seconthead mt-5"
         style={{ textAlign: "center", marginBottom: "3%" }}
       >
         <h1>REFER FRIENDS FOR UP TO $50 OFF.</h1>
@@ -419,24 +394,17 @@ function HomePage() {
         </div>
       </div>
       <div className="buttonDiv">
-        <button
-          style={{
-            backgroundColor: "black",
-            color: "white",
-            borderRadius: 20,
-            padding: 10,
-            width: 100,
-          }}
+        <button className="btns"
+          
         >
           Join Now
         </button>
       </div>
 
       <p style={{ textAlign: "center", marginBottom: " 4%" }}>
-        Already have an account?<a href="#">Log in</a>
       </p>
       {/* forth End */}
-      <div className="container" style={{ marginBottom: "5%" }}>
+      <div className="container mt-5" style={{ marginBottom: "5%" }}>
         <h4 className="text-center mb-4">FAQ - GENERAL</h4>
         <p>
           <h6>Q: What is the Oner Active Loyalty member club?</h6> A: It is our
@@ -481,152 +449,22 @@ function HomePage() {
           Loyalty Club
         </p>
       </div>
-      <MyBanner />
+      <div className='banner2'>
 
-      <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          {/* <!-- Left --> */}
-          <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-          </div>
-          {/* <!-- Left --> */}
+     <div className='text'>
+        <h2>IT'S YOUR TURN!</h2>
+        <p>Join today and collect loyalty points to gain valuable benefits.
 
-          {/* <!-- Right --> */}
-          <div>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-          {/* <!-- Right --> */}
-        </section>
-        {/* <!-- Section: Social media --> */}
+        </p>
 
-        {/* <!-- Section: Links  --> */}
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            {/* <!-- Grid row --> */}
-            <div class="row mt-3">
-              {/* <!-- Grid column --> */}
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                {/* <!-- Content --> */}
-                <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fas fa-gem me-3"></i>Company name
-                </h6>
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
-              </div>
-              {/* <!-- Grid column --> */}
-
-              {/* <!-- Grid column --> */}
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* <!-- Links --> */}
-                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Angular
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    React
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Vue
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Laravel
-                  </a>
-                </p>
-              </div>
-              {/* <!-- Grid column --> */}
-
-              {/* <!-- Grid column --> */}
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* <!-- Links --> */}
-                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Pricing
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Settings
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Orders
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Help
-                  </a>
-                </p>
-              </div>
-              {/* <!-- Grid column --> */}
-
-              {/* <!-- Grid column --> */}
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                {/* <!-- Links --> */}
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p>
-                  <i class="fas fa-home me-3"></i> New York, NY 10012, US
-                </p>
-                <p>
-                  <i class="fas fa-envelope me-3"></i>
-                  info@example.com
-                </p>
-                <p>
-                  <i class="fas fa-phone me-3"></i> + 01 234 567 88
-                </p>
-                <p>
-                  <i class="fas fa-print me-3"></i> + 01 234 567 89
-                </p>
-              </div>
-              {/* <!-- Grid column --> */}
-            </div>
-            {/* <!-- Grid row --> */}
-          </div>
-        </section>
-        {/* <!-- Section: Links  -->
-
-  <!-- Copyright --> */}
-        <div
-          class="text-center p-4"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
-        >
-          © 2021 Copyright:
-          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">
-            MDBootstrap.com
-          </a>
-        </div>
-        {/* <!-- Copyright --> */}
-      </footer>
-      {/* <!-- Footer --> */}
+        <button className='btns'>Join Now</button>
+        
+      
+      </div>
+  </div>
+      
+      <Footer/>
+      
     </div>
   );
 }
