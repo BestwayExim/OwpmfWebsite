@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import "./App.css";
+import MyHeader from "./components/header/Header";
+
+import Mysidenav from "./components/sidenav/sidenave";
+import { Sidenavcontext } from ".";
+import CarouselBar from "./components/carouselview/Carousel";
+import MyBanner from "./components/banner/Banner";
+import HomePage from "./pages/homepage/home";
 
 function App() {
+  const { sidenav } = useContext(Sidenavcontext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MyHeader />
+      <CarouselBar />
+      <MyBanner />
+      <HomePage />
+      <Mysidenav />
+    </>
   );
 }
 

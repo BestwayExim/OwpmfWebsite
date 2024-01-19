@@ -1,0 +1,28 @@
+.mysidnav {
+  position: fixed;
+  top: 50px;
+  width: 200px;
+  color: black;
+  height: calc(100vh - 50px);
+  background-color: aqua;
+
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; /* Add transition property */
+}
+
+.mysidnav1 {
+  width: 0;
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s; /* Add transition property */
+}
+@media screen and (min-width: 900px) {
+  .mysidnav {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: lightgreen;
+  }
+}

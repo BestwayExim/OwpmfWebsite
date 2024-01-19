@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom";
+import App from "./App";
+//import { Sidenavcontext } from "./context/context";
+import { createContext, useState } from "react";
+export const Sidenavcontext = createContext(null);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const Root = () => {
+  // Use useState to manage the initial state of the context
+  const [sidenav, setSidenav] = useState(false);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  return (
+    <Sidenavcontext.Provider value={{ setSidenav, sidenav }}>
+      <App />
+    </Sidenavcontext.Provider>
+  );
+};
+
+ReactDOM.render(<Root />, document.getElementById("root"));
