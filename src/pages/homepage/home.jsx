@@ -4,7 +4,7 @@ import MyBanner from "../../components/banner/Banner";
 import DoneIcon from "@mui/icons-material/Done";
 import Footer from "../../components/Footer/Footer";
 import { Margin } from "@mui/icons-material";
-
+import CloseIcon from "@mui/icons-material/Close";
 function HomePage() {
   return (
     <div>
@@ -97,7 +97,7 @@ function HomePage() {
 
         <p style={{ textAlign: "center", marginBottom: " 4%" }}></p>
         <div className="seconthead" style={{ textAlign: "center" }}>
-          <div className="seconthead mt-5" style={{ textAlign: "center" }}>
+          <div className="seconthead mt-5 " style={{ textAlign: "center" }}>
             <h3 style={{ fontWeight: 700, marginBottom: "20px" }}>
               HOW TO EARN POINTS.
             </h3>
@@ -108,7 +108,7 @@ function HomePage() {
           </div>
 
           {/* Second Section start */}
-          <div class="container">
+          <div style={{ marginTop: "80px" }} class="container">
             <div className="iconsdiv ">
               <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
                 <div class="col">
@@ -253,28 +253,16 @@ function HomePage() {
                 <tr>
                   <th scope="col"></th>
                   <th scope="col">
-                    <img
-                      class="bp-status-bronze"
-                      src="/images/neptune.png"
-                    />
+                    <img class="bp-status-bronze" src="/images/neptune.png" />
                   </th>
                   <th scope="col">
-                    <img
-                      class="bp-status-silver"
-                      src="/images/saturn.png"
-                    />
+                    <img class="bp-status-silver" src="/images/saturn.png" />
                   </th>
                   <th scope="col">
-                    <img
-                      class="bp-status-gold"
-                      src="/images/mars.png"
-                    />
+                    <img class="bp-status-gold" src="/images/mars.png" />
                   </th>
                   <th scope="col">
-                    <img
-                      class="bp-status-gold"
-                      src="/images/mercury.png"
-                    />
+                    <img class="bp-status-gold" src="/images/mercury.png" />
                   </th>
                 </tr>
               </thead>
@@ -293,46 +281,30 @@ function HomePage() {
                   <th style={{ backgroundColor: "#D7C57F" }}>
                     SATURN
                     <br />
-                    $350+
+                    250 OWPC
                   </th>
                   <th style={{ backgroundColor: "#C37730" }}>
-                   MARS
+                    MARS
                     <br />
-                    $700+
+                    750 OWPC
                   </th>
                   <th style={{ backgroundColor: "#C1B9BB" }}>
-                   MERCURY
+                    MERCURY
                     <br />
-                    $700+
+                    1500 OWPC
                   </th>
                 </tr>
                 <tr>
-                  <td scope="row">Points per $1 spent</td>
-                  <td>100 Points</td>
-                  <td>125 Points</td>
-                  <td>125 Points</td>
+                  <td scope="row">Loyalty Point Gain : 1 point per $ Spent</td>
+                  <td>1 Points</td>
+                  <td>3 Points</td>
+                  <td>5 Points</td>
 
-                  <td>150 Points</td>
+                  <td>10 Points</td>
                 </tr>
-                
+
                 <tr>
-                  <td scope="row">Exchange Peace Points for discounts</td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td scope="row">Birthday offer</td>
+                  <td scope="row">Access to OWPC Wallet & Coin</td>
                   <td>
                     <DoneIcon />
                   </td>
@@ -346,8 +318,9 @@ function HomePage() {
                     <DoneIcon />
                   </td>
                 </tr>
+
                 <tr>
-                  <td>Free participation in a yearly giveaway</td>
+                  <td scope="row">Point Conversion to OWPC</td>
                   <td>
                     <DoneIcon />
                   </td>
@@ -362,29 +335,106 @@ function HomePage() {
                   </td>
                 </tr>
                 <tr>
-                  <td>Return shipping time (according to T&C)</td>
-                  <td>30 days</td>
-                  <td>45 days</td>
-                  <td>60 days</td>
-                </tr>
-                <tr>
-                  <td>Member status entry reward</td>
-                  <td style={{ border: "0" }}></td>
-                  <td>750 Points</td>
-                  <td>1000 Points</td>
-                </tr>
-                <tr>
-                  <td>Secret offers</td>
-                  <td style={{ border: "0" }}></td>
-                  <td style={{ border: "0" }}></td>
+                  <td>Tele Consultation Service @ 25% Discount</td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
                   <td>
                     <DoneIcon />
                   </td>
                 </tr>
                 <tr>
-                  <td>Secret offers</td>
-                  <td style={{ border: "0" }}></td>
-                  <td style={{ border: "0" }}></td>
+                  <td>Free OWPC Membership Gifts</td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Invitation to special Events</td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Discount offers at Stores</td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Free Travel Consultation</td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Free Airport Lounge Access</td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <DoneIcon />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Free Airport Pick up & Drop.</td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <CloseIcon />
+                  </td>
+                  <td>
+                    <CloseIcon />
+                  </td>
                   <td>
                     <DoneIcon />
                   </td>
@@ -425,7 +475,7 @@ function HomePage() {
                   <div>
                     <div style={{ fontWeight: 600 }}>1 FRIEND</div>
                     <div style={{ fontFamily: "serif", fontWeight: 600 }}>
-                      Earn 10,000 Oner Points
+                      Earn 10,000 Peace Points
                     </div>
                     <div style={{ fontFamily: "serif", fontWeight: 600 }}>
                       worth $5.
@@ -443,7 +493,7 @@ function HomePage() {
                   <div>
                     <div style={{ fontWeight: 600 }}>1 FRIEND</div>
                     <div style={{ fontFamily: "serif", fontWeight: 600 }}>
-                      Earn 10,000 Oner Points
+                      Earn 10,000 Peace Points
                     </div>
                     <div style={{ fontFamily: "serif", fontWeight: 600 }}>
                       worth $5.
@@ -460,7 +510,7 @@ function HomePage() {
                   <div>
                     <div style={{ fontWeight: 600 }}>1 FRIEND</div>
                     <div style={{ fontFamily: "serif", fontWeight: 600 }}>
-                      Earn 10,000 Oner Points
+                      Earn 10,000 Peace Points
                     </div>
                     <div style={{ fontFamily: "serif", fontWeight: 600 }}>
                       worth $5.
@@ -477,7 +527,7 @@ function HomePage() {
                   <div>
                     <div style={{ fontWeight: 600 }}>1 FRIEND</div>
                     <div style={{ fontFamily: "serif", fontWeight: 600 }}>
-                      Earn 10,000 Oner Points
+                      Earn 10,000 Peace Points
                     </div>
                     <div style={{ fontFamily: "serif", fontWeight: 600 }}>
                       worth $5.
@@ -501,7 +551,42 @@ function HomePage() {
               FAQ - GENERAL
             </h4>
 
-            <h6 style={{fontWeight:700}}>
+            <h6 style={{ fontWeight: 700 }}>Q: What is the OWPMF??</h6>
+            <p>
+              A: It is our way of saying “thank you” for being a loyal customer.
+              Earn points (Peace Points) and redeem when making purchases, level
+              up to get exclusive perks, or benefit from referring friends.
+            </p>
+            <h6 style={{ fontWeight: 700 }}>
+              Q: How to become a Loyalty club member?
+            </h6>
+            <p>
+              A: As soon as you sign up with OWPMF, or if you are an existing
+              registered customer, you will automatically receive free
+              membership to our OWPMF.
+            </p>
+
+            <h4 style={{ fontWeight: 700 }} className="text-center mb-4">
+              FAQ - PEACE
+            </h4>
+            {/* <h6 style={{ fontWeight: 700 }}>
+              Q: What is the Oner Active Loyalty member club?
+            </h6>
+            <p>
+              A: It is our way of saying “thank you” for being a loyal customer.
+              Earn points (Peace Points) and redeem when making purchases, level
+              up to get exclusive perks, or benefit from referring friends.
+            </p> */}
+            <h6 style={{ fontWeight: 700 }}>
+              Q: How to become a Loyalty club member?
+            </h6>
+            <p>
+              A: As soon as you sign up with Oner Active, or if you are an
+              existing registered customer, you will automatically receive free
+              membership to our Loyalty Club
+            </p>
+            <h6 style={{ fontWeight: 700 }}>
+              {" "}
               Q: What is the Oner Active Loyalty member club?
             </h6>
             <p>
@@ -509,35 +594,9 @@ function HomePage() {
               Earn points (Peace Points) and redeem when making purchases, level
               up to get exclusive perks, or benefit from referring friends.
             </p>
-            <h6 style={{fontWeight:700}}>Q: How to become a Loyalty club member?</h6>
-            <p>
-              A: As soon as you sign up with Oner Active, or if you are an
-              existing registered customer, you will automatically receive free
-              membership to our Loyalty Club
-            </p>
-
-            <h4 style={{ fontWeight: 700 }} className="text-center mb-4">
-              FAQ - PEACE
-            </h4>
-            <h6 style={{fontWeight:700}}>Q: What is the Oner Active Loyalty member club?</h6>
-            <p> 
-              A: It is our way of saying “thank you” for being a loyal customer.
-              Earn points (Peace Points) and redeem when making purchases, level
-              up to get exclusive perks, or benefit from referring friends.
-            </p>
-            <h6 style={{fontWeight:700}}>Q: How to become a Loyalty club member?</h6>
-            <p>
-              A: As soon as you sign up with Oner Active, or if you are an
-              existing registered customer, you will automatically receive free
-              membership to our Loyalty Club
-            </p>
-            <h6 style={{fontWeight:700}}> Q: What is the Oner Active Loyalty member club?</h6>
-            <p>
-              A: It is our way of saying “thank you” for being a loyal customer.
-              Earn points (Peace Points) and redeem when making purchases, level
-              up to get exclusive perks, or benefit from referring friends.
-            </p>
-            <h6 style={{fontWeight:700}}>Q: How to become a Loyalty club member?</h6>
+            <h6 style={{ fontWeight: 700 }}>
+              Q: How to become a Loyalty club member?
+            </h6>
             <p>
               A: As soon as you sign up with Oner Active, or if you are an
               existing registered customer, you will automatically receive free

@@ -12,8 +12,8 @@ function MyBanner() {
     }
      } className='text'>
         <h2>LOYALTY CLUB</h2>
-        <p>Welcome to the Oner Active Loyalty Club.<br/>
-          Become a member, collect loyalty points, and gain valuable benefits.</p>
+        <p>Welcome to the OWPMF.<br/>
+        Become a member, collect Peace points, and gain valuable benefits.</p>
 
         <button className='btns'>Join Now</button>
         
