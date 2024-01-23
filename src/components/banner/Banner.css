@@ -44,8 +44,26 @@
   border: none;
   width: 200px;
   height: 35px;
+  transition: background-color 0.3s; 
 }
 
+.btns:hover {
+  background-color: #42ADD5; /* Change the background color on hover */
+}
+.btns_small {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  width: 120px;
+  height: 35px;
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+
+}
+
+.btns_small:hover {
+  background-color: #42ADD5; /* Change the background color on hover */
+}
 .leftbuttondiv {
   color: black;
   padding-left: 3%;

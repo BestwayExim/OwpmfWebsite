@@ -1,6 +1,6 @@
 .headingdiv {
   text-align: center;
-  padding-top: 6%;
+  padding-top: 2%;
 }
 .headingdiv h2,
 .container h4 .seconthead h2,
@@ -112,7 +112,7 @@ td .non-empty-cell {
   margin-top: 3%;
   display: flex;
 
-  justify-content: center;
+  justify-content: space-around;
   padding-bottom: 0%;
   align-items: center;
 }
