@@ -103,11 +103,10 @@ const Modal = ({ setModal }) => {
             className="container bgcardColor"
           >
             <div className="second_card">
-              <h6 style={{ padding: 20 }}>peace point</h6>
+              <h6 style={{ padding: 20 }}>Refer friends</h6>
 
               <p>
-                Earn Peace Points for different actions, and turn those into
-                awesome rewards.
+              Share this URL to give your friends a $10 off discount.
               </p>
             </div>
           </div>
@@ -121,11 +120,10 @@ const Modal = ({ setModal }) => {
             className="container bgcardColor"
           >
             <div className="second_card">
-              <h6 style={{ padding: 20 }}>peace point</h6>
+              <h6 style={{ padding: 20 }}>Member Status</h6>
 
               <p>
-                Earn Peace Points for different actions, and turn those into
-                awesome rewards.
+              With every purchase you make, you move one step closer to levelling up your exclusive member status. Awesome perks and exclusive member-only items are waiting for you.
               </p>
             </div>
           </div>
