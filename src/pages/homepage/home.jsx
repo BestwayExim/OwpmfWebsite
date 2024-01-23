@@ -246,8 +246,8 @@ function HomePage() {
               for you.
             </p>
           </div>
-
-          <div className="tabledive">
+<div  className="container">
+<div className="tabledive">
             <table class="table">
               <thead>
                 <tr>
@@ -336,9 +336,7 @@ function HomePage() {
                 </tr>
                 <tr>
                   <td>Tele Consultation Service @ 25% Discount</td>
-                  <td>
-                    <CloseIcon />
-                  </td>
+                  <td style={{ border: "0" }}></td>
                   <td>
                     <DoneIcon />
                   </td>
@@ -351,9 +349,7 @@ function HomePage() {
                 </tr>
                 <tr>
                   <td>Free OWPC Membership Gifts</td>
-                  <td>
-                    <CloseIcon />
-                  </td>
+                  <td style={{ border: "0" }}></td>
                   <td>
                     <DoneIcon />
                   </td>
@@ -366,12 +362,8 @@ function HomePage() {
                 </tr>
                 <tr>
                   <td>Invitation to special Events</td>
-                  <td>
-                    <CloseIcon />
-                  </td>
-                  <td>
-                    <CloseIcon />
-                  </td>
+                  <td style={{ border: "0" }}></td>
+                  <td style={{ border: "0" }}></td>
                   <td>
                     <DoneIcon />
                   </td>
@@ -381,12 +373,8 @@ function HomePage() {
                 </tr>
                 <tr>
                   <td>Discount offers at Stores</td>
-                  <td>
-                    <CloseIcon />
-                  </td>
-                  <td>
-                    <CloseIcon />
-                  </td>
+                  <td style={{ border: "0" }}></td>
+                  <td style={{ border: "0" }}></td>
                   <td>
                     <DoneIcon />
                   </td>
@@ -396,45 +384,27 @@ function HomePage() {
                 </tr>
                 <tr>
                   <td>Free Travel Consultation</td>
-                  <td>
-                    <CloseIcon />
-                  </td>
-                  <td>
-                    <CloseIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
+                  <td style={{ border: "0" }}></td>
+                  <td style={{ border: "0" }}></td>
+                  <td style={{ border: "0" }}></td>
                   <td>
                     <DoneIcon />
                   </td>
                 </tr>
                 <tr>
                   <td>Free Airport Lounge Access</td>
-                  <td>
-                    <CloseIcon />
-                  </td>
-                  <td>
-                    <CloseIcon />
-                  </td>
-                  <td>
-                    <CloseIcon />
-                  </td>
+                  <td style={{ border: "0" }}></td>
+                  <td style={{ border: "0" }}></td>
+                  <td style={{ border: "0" }}></td>
                   <td>
                     <DoneIcon />
                   </td>
                 </tr>
                 <tr>
                   <td>Free Airport Pick up & Drop.</td>
-                  <td>
-                    <CloseIcon />
-                  </td>
-                  <td>
-                    <CloseIcon />
-                  </td>
-                  <td>
-                    <CloseIcon />
-                  </td>
+                  <td style={{ border: "0" }}></td>
+                  <td style={{ border: "0" }}></td>
+                  <td style={{ border: "0" }}></td>
                   <td>
                     <DoneIcon />
                   </td>
@@ -442,6 +412,8 @@ function HomePage() {
               </tbody>
             </table>
           </div>
+</div>
+        
 
           <div className="buttonDiv">
             <button className="btns_small">Join Now</button>
