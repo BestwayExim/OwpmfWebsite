@@ -24,17 +24,28 @@
 }
 .icon {
   margin-bottom: -10px;
-
+  background-color: rgba(241, 186, 12, 1);
   border-radius: 50%;
   width: 130px;
   height: 130px;
+
   justify-content: center;
   align-items: center;
   display: flex;
 }
-.bp-how-it-works-img {
-  height: 130px;
+.iconsecont {
+  margin-bottom: -10px;
+
+  border-radius: 50%;
   width: 130px;
+  height: 130px;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.icon .iconimg {
+  width: 60px;
 }
 
 .col {
@@ -67,7 +78,6 @@
   margin-bottom: 8%;
 }
 .tabledive {
- 
   justify-content: center;
   align-items: center;
   margin-bottom: 3%;
@@ -129,9 +139,5 @@ td .non-empty-cell {
     width: 100px;
     height: 70px;
     margin-bottom: 10%;
-  }
-  .bp-how-it-works-img {
-    width: 100px;
-    height: 100px;
   }
 }

@@ -1,54 +1,54 @@
-
-
-.banner{
+.banner {
   position: relative;
   width: 100%;
-    background: url('https://www.oneractive.com/cdn/shop/files/ONER_LoyaltyClubHeadBanner_desktop_ms_20200825.png?v=1600256838');
-    height: 400px;
-    
-    background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
-} 
+  background: url("https://www.oneractive.com/cdn/shop/files/ONER_LoyaltyClubHeadBanner_desktop_ms_20200825.png?v=1600256838");
+  height: 400px;
 
-.banner2{
-  position: relative;
-  width: 100%;
-    background: url('https://www.oneractive.com/cdn/shop/files/ONER_LoyaltyClubBanner_desktop_ms_20200825.png?v=1600256773');
-    height: 400px;
-    
-    background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-.img1{
+.banner2 {
+  position: relative;
+  width: 100%;
+  background: url("https://www.oneractive.com/cdn/shop/files/ONER_LoyaltyClubBanner_desktop_ms_20200825.png?v=1600256773");
+  height: 400px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img1 {
   width: 100%;
   height: 380px;
 }
 
-.text{
+.text {
   position: absolute;
   width: 40%;
   height: 200px;
   top: 25%;
   left: 11%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.btns{
-  background-color: black;
+.btns {
+  /* background-color: black; */
+  background: linear-gradient(180deg, #f0b90a 0%, rgba(255, 204, 41, 0.99) 100%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  color: white;
   color: white;
   border-radius: 20px;
   border: none;
   width: 200px;
   height: 35px;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
 }
 
 .btns:hover {
-  background-color: #42ADD5; /* Change the background color on hover */
+  background-color: #42add5; /* Change the background color on hover */
 }
 .btns_small {
   background-color: black;
@@ -58,11 +58,10 @@
   width: 120px;
   height: 35px;
   transition: background-color 0.3s; /* Add a smooth transition effect */
-
 }
 
 .btns_small:hover {
-  background-color: #42ADD5; /* Change the background color on hover */
+  background-color: #42add5; /* Change the background color on hover */
 }
 .leftbuttondiv {
   color: black;
@@ -70,20 +69,18 @@
   padding-top: 10%;
 }
 
-@media (max-width:800px) {
-
-  .text{
+@media (max-width: 800px) {
+  .text {
     position: absolute;
     width: 40%;
     height: 200px;
     top: 15%;
     left: 10%;
-  
+
     font-size: 13px;
-    
   }
 
-  .btns{
+  .btns {
     background-color: black;
     color: white;
     border-radius: 20px;
@@ -91,42 +88,32 @@
     width: 100px;
     height: 28px;
   }
-  .img2{
-     display: none;
-  }
-
-  .banner{
-    background: url('https://www.oneractive.com/cdn/shop/files/ONER_LoyaltyClubHeadBanner_mobile_ms_20200825.png?v=1600256838');
-    height: 250px;
-    
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-
-
-
-  } 
-  .img1{
-   
+  .img2 {
     display: none;
   }
 
-  .banner2{
-    background: url('https://www.oneractive.com/cdn/shop/files/ONER_LoyaltyClubBanner_desktop_ms_20200825.png?v=1600256773');
+  .banner {
+    background: url("https://www.oneractive.com/cdn/shop/files/ONER_LoyaltyClubHeadBanner_mobile_ms_20200825.png?v=1600256838");
+    height: 250px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .img1 {
+    display: none;
+  }
+
+  .banner2 {
+    background: url("https://www.oneractive.com/cdn/shop/files/ONER_LoyaltyClubBanner_desktop_ms_20200825.png?v=1600256773");
     height: 250px;
     width: 100%;
-    
-    background-size: cover; 
-    background-position: center; 
+
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-
-
-
-  } 
-  .img1{
-   
+  }
+  .img1 {
     display: none;
   }
 }
-
-

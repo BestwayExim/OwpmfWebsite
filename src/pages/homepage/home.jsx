@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import MyBanner from "../../components/banner/Banner";
 import DoneIcon from "@mui/icons-material/Done";
 import Footer from "../../components/Footer/Footer";
 import { Margin } from "@mui/icons-material";
 import CloseIcon from "@mui/icons-material/Close";
+
 function HomePage() {
   return (
     <div>
@@ -23,10 +24,11 @@ function HomePage() {
             <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
               <div class="col">
                 <div className="card">
-                  <div className="icon">
+                  <div className="icon ">
                     <img
-                      class="bp-how-it-works-img"
-                      src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_works_01.svg?v=1600248639"
+                      src="/images/user-icon.png"
+                      className="iconimg"
+                      alt=""
                     />
                   </div>
                   <div className="card-body mb-4">
@@ -38,10 +40,7 @@ function HomePage() {
               <div class="col">
                 <div className="card">
                   <div className="icon">
-                    <img
-                      class="bp-how-it-works-img"
-                      src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_works_02.svg?v=1600248639"
-                    />
+                    <img className="iconimg" src="/images/subscribe 1.png" />
                   </div>
                   <div className="card-body mt-2">
                     <h6 className="title">Step 2</h6>
@@ -56,10 +55,7 @@ function HomePage() {
               <div class="col">
                 <div className="card">
                   <div className="icon">
-                    <img
-                      class="bp-how-it-works-img"
-                      src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_works_03.svg?v=1600248639"
-                    />
+                    <img class="iconimg" src="/images/level-up 1.png" />
                   </div>
                   <div className="card-body">
                     <h6 className="title">Step 3</h6>
@@ -74,10 +70,7 @@ function HomePage() {
               <div class="col">
                 <div className="card">
                   <div className="icon">
-                    <img
-                      class="bp-how-it-works-img"
-                      src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_works_04.svg?v=1600248639"
-                    />
+                    <img className="iconimg" src="/images/box (1) 1.png" />
                   </div>
                   <div className="card-body">
                     <h6 className="title">Step 3</h6>
@@ -113,7 +106,7 @@ function HomePage() {
               <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
                 <div class="col">
                   <div className="card">
-                    <div className="icon">
+                    <div className="iconsecont">
                       <img
                         class="bp-how-it-works-img"
                         src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_earn_01.svg?v=1600248639"
@@ -127,7 +120,7 @@ function HomePage() {
                 </div>
                 <div class="col">
                   <div className="card">
-                    <div className="icon">
+                    <div className="iconsecont">
                       <img
                         class="bp-how-it-works-img"
                         src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_earn_02.svg?v=1600248639"
@@ -141,7 +134,7 @@ function HomePage() {
                 </div>
                 <div class="col">
                   <div className="card">
-                    <div className="icon">
+                    <div className="iconsecont">
                       <img
                         class="bp-how-it-works-img"
                         src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_earn_03.svg?v=1600248639"
@@ -155,7 +148,7 @@ function HomePage() {
                 </div>
                 <div class="col">
                   <div className="card">
-                    <div className="icon">
+                    <div className="iconsecont">
                       <img
                         class="bp-how-it-works-img"
                         src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_earn_04.svg?v=1600248639"
@@ -183,7 +176,7 @@ function HomePage() {
               >
                 <div class="col">
                   <div className="card">
-                    <div className="icon">
+                    <div className="iconsecont">
                       <img
                         class="bp-how-it-works-img"
                         src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_earn_05.svg?v=1600248639"
@@ -197,7 +190,7 @@ function HomePage() {
                 </div>
                 <div class="col">
                   <div className="card">
-                    <div className="icon">
+                    <div className="iconsecont">
                       <img
                         class="bp-how-it-works-img"
                         src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_earn_06.svg?v=1600248639"
@@ -211,7 +204,7 @@ function HomePage() {
                 </div>
                 <div class="col col-md-6 offset-md-3 col-lg-4 offset-lg-0">
                   <div className="card">
-                    <div className="icon">
+                    <div className="iconsecont">
                       <img
                         class="bp-how-it-works-img"
                         src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_earn_07.svg?v=1600248639"
@@ -246,174 +239,179 @@ function HomePage() {
               for you.
             </p>
           </div>
-<div  className="container">
-<div className="tabledive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">
-                    <img class="bp-status-bronze" src="/images/neptune.png" />
-                  </th>
-                  <th scope="col">
-                    <img class="bp-status-silver" src="/images/saturn.png" />
-                  </th>
-                  <th scope="col">
-                    <img class="bp-status-gold" src="/images/mars.png" />
-                  </th>
-                  <th scope="col">
-                    <img class="bp-status-gold" src="/images/mercury.png" />
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ borderTop: 0 }}>
-                  <th
-                    style={{ borderTop: 0, textAlign: "end", paddingTop: "2%" }}
-                  >
-                    Spent per calendar year
-                  </th>
-                  <th style={{ backgroundColor: "#417D98" }}>
-                    Neptune
-                    <br />
-                    Free
-                  </th>
-                  <th style={{ backgroundColor: "#D7C57F" }}>
-                    SATURN
-                    <br />
-                    250 OWPC
-                  </th>
-                  <th style={{ backgroundColor: "#C37730" }}>
-                    MARS
-                    <br />
-                    750 OWPC
-                  </th>
-                  <th style={{ backgroundColor: "#C1B9BB" }}>
-                    MERCURY
-                    <br />
-                    1500 OWPC
-                  </th>
-                </tr>
-                <tr>
-                  <td scope="row">Loyalty Point Gain : 1 point per $ Spent</td>
-                  <td>1 Points</td>
-                  <td>3 Points</td>
-                  <td>5 Points</td>
+          <div className="container">
+            <div className="tabledive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">
+                      <img class="bp-status-bronze" src="/images/neptune.png" />
+                    </th>
+                    <th scope="col">
+                      <img class="bp-status-silver" src="/images/saturn.png" />
+                    </th>
+                    <th scope="col">
+                      <img class="bp-status-gold" src="/images/mars.png" />
+                    </th>
+                    <th scope="col">
+                      <img class="bp-status-gold" src="/images/mercury.png" />
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style={{ borderTop: 0 }}>
+                    <th
+                      style={{
+                        borderTop: 0,
+                        textAlign: "end",
+                        paddingTop: "2%",
+                      }}
+                    >
+                      Spent per calendar year
+                    </th>
+                    <th style={{ backgroundColor: "#417D98" }}>
+                      Neptune
+                      <br />
+                      Free
+                    </th>
+                    <th style={{ backgroundColor: "#D7C57F" }}>
+                      SATURN
+                      <br />
+                      250 OWPC
+                    </th>
+                    <th style={{ backgroundColor: "#C37730" }}>
+                      MARS
+                      <br />
+                      750 OWPC
+                    </th>
+                    <th style={{ backgroundColor: "#C1B9BB" }}>
+                      MERCURY
+                      <br />
+                      1500 OWPC
+                    </th>
+                  </tr>
+                  <tr>
+                    <td scope="row">
+                      Loyalty Point Gain : 1 point per $ Spent
+                    </td>
+                    <td>1 Points</td>
+                    <td>3 Points</td>
+                    <td>5 Points</td>
 
-                  <td>10 Points</td>
-                </tr>
+                    <td>10 Points</td>
+                  </tr>
 
-                <tr>
-                  <td scope="row">Access to OWPC Wallet & Coin</td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                </tr>
+                  <tr>
+                    <td scope="row">Access to OWPC Wallet & Coin</td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                  </tr>
 
-                <tr>
-                  <td scope="row">Point Conversion to OWPC</td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Tele Consultation Service @ 25% Discount</td>
-                  <td style={{ border: "0" }}></td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Free OWPC Membership Gifts</td>
-                  <td style={{ border: "0" }}></td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Invitation to special Events</td>
-                  <td style={{ border: "0" }}></td>
-                  <td style={{ border: "0" }}></td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Discount offers at Stores</td>
-                  <td style={{ border: "0" }}></td>
-                  <td style={{ border: "0" }}></td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Free Travel Consultation</td>
-                  <td style={{ border: "0" }}></td>
-                  <td style={{ border: "0" }}></td>
-                  <td style={{ border: "0" }}></td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Free Airport Lounge Access</td>
-                  <td style={{ border: "0" }}></td>
-                  <td style={{ border: "0" }}></td>
-                  <td style={{ border: "0" }}></td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Free Airport Pick up & Drop.</td>
-                  <td style={{ border: "0" }}></td>
-                  <td style={{ border: "0" }}></td>
-                  <td style={{ border: "0" }}></td>
-                  <td>
-                    <DoneIcon />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  <tr>
+                    <td scope="row">Point Conversion to OWPC</td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Tele Consultation Service @ 25% Discount</td>
+                    <td style={{ border: "0" }}></td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Free OWPC Membership Gifts</td>
+                    <td style={{ border: "0" }}></td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Invitation to special Events</td>
+                    <td style={{ border: "0" }}></td>
+                    <td style={{ border: "0" }}></td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Discount offers at Stores</td>
+                    <td style={{ border: "0" }}></td>
+                    <td style={{ border: "0" }}></td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Free Travel Consultation</td>
+                    <td style={{ border: "0" }}></td>
+                    <td style={{ border: "0" }}></td>
+                    <td style={{ border: "0" }}></td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Free Airport Lounge Access</td>
+                    <td style={{ border: "0" }}></td>
+                    <td style={{ border: "0" }}></td>
+                    <td style={{ border: "0" }}></td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Free Airport Pick up & Drop.</td>
+                    <td style={{ border: "0" }}></td>
+                    <td style={{ border: "0" }}></td>
+                    <td style={{ border: "0" }}></td>
+                    <td>
+                      <DoneIcon />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-</div>
-        
 
           <div className="buttonDiv">
             <button className="btns_small">Join Now</button>

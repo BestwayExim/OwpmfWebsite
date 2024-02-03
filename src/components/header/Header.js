@@ -27,16 +27,22 @@ function MyHeader() {
         paddingTop: 0,
       }}
     >
-      <a className="navbar-brand d-flex align-items-start" href="#">
-        <img
-          className="oa-footer__logo-img lazy hidden-xs hidden-sm m-t-30 loaded"
-          style={{ filter: "invert(1)", width: "40px", height: "50px" }}
-          data-src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/logo_icon_black.svg?v=1597160328"
-          alt="Oner Active Logo"
-          src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/logo_icon_black.svg?v=1597160328"
-          data-was-processed="true"
-        />
-      </a>
+      <div>
+        <a className="navbar-brand d-flex align-items-start" href="#">
+          <img
+            className="oa-footer__logo-img lazy hidden-xs hidden-sm m-t-30 loaded"
+            style={{ filter: "invert(1)", width: "40px", height: "50px" }}
+            data-src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/logo_icon_black.svg?v=1597160328"
+            alt="Oner Active Logo"
+            src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/logo_icon_black.svg?v=1597160328"
+            data-was-processed="true"
+          />
+        </a>
+      </div>
+
+      <div>
+        <h1>LOYALTY CLUB</h1>
+      </div>
       {/* <div
         className="container-fluid"
         style={{
