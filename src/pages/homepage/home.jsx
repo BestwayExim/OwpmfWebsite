@@ -5,10 +5,14 @@ import DoneIcon from "@mui/icons-material/Done";
 import Footer from "../../components/Footer/Footer";
 import { Margin } from "@mui/icons-material";
 import CloseIcon from "@mui/icons-material/Close";
+import Cards from "../../components/thirdSection/Cards";
+import JoinModal from "../../components/Modal/JoinModal";
 
 function HomePage() {
+  const [showModal, setModalOpen] = useState(false);
   return (
     <div>
+      <JoinModal isModalOpen={setModalOpen} showModal={showModal} />
       <div className="">
         <div className="headingdiv ">
           <h3 style={{ fontWeight: 600 }}>HOW IT WORKS.</h3>
@@ -85,7 +89,9 @@ function HomePage() {
           </div>
         </div>
         <div className="buttonDiv">
-          <button className="btns_small">JOIN NOW</button>
+          <button className="btns_small" onClick={() => setModalOpen(true)}>
+            JOIN NOW
+          </button>
         </div>
 
         <p style={{ textAlign: "center", marginBottom: " 4%" }}></p>
@@ -102,6 +108,7 @@ function HomePage() {
 
           {/* Second Section start */}
           <div style={{ marginTop: "80px" }} class="container">
+            <Cards />
             <div className="iconsdiv ">
               <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
                 <div class="col">
