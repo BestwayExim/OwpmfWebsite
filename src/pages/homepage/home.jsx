@@ -19,8 +19,8 @@ function HomePage() {
     <div className="full_div">
       {/* <JoinModal isModalOpen={setModalOpen} showModal={showModal} /> */}
       <div className="">
-        <div className="headingdiv ">
-          <h3 style={{ fontWeight: 600 }}>HOW IT WORKS.</h3>
+        <div style={{marginBottom:"90px"}} className="headingdiv ">
+          <h3 style={{ fontWeight: 600,color:"white" }}>HOW IT WORKS.</h3>
           <p>
             Earn peace Points and redeem them when making purchases, level up
             your member status to <br />
@@ -28,8 +28,8 @@ function HomePage() {
           </p>
         </div>
 
-        <div class="container ">
-          <div className="iconsdiv ">
+        <div  class="container ">
+          <div   className="iconsdiv ">
             <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
               <div class="col ">
                 <div style={{ backgroundColor: "black" }} className="card ">
@@ -297,10 +297,8 @@ function HomePage() {
                     >
                       Spent per calendar year
                     </th>
-                    <th style={{ backgroundColor: "#417D98" }}>
+                    <th style={{ backgroundColor: "#417D98"}}>
                       Neptune
-                      <br />
-                      Free
                     </th>
                     <th style={{ backgroundColor: "#D7C57F" }}>
                       SATURN
@@ -563,8 +561,10 @@ function HomePage() {
           >
             <FAQ />
           </div>
+          <div className="p-5 ">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.7045916121378!2d55.29880042533457!3d25.155657905637874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f688c5516ea0f%3A0x44800f32689f57e2!2sThe%20Meydan%20Hotel!5e0!3m2!1sen!2sin!4v1707421252815!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+          </div>
           <Footer />
         </div>
       </div>

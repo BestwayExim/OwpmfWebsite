@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./header.css";
 import "bootstrap/dist/css/bootstrap.css";
-
+import  logo from "../../Assets/images/logo.png"
 import InsightsIcon from "@mui/icons-material/Insights";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -31,10 +31,10 @@ function MyHeader() {
         <a className="" href="#">
           <img
             className="oa-footer__logo-img lazy hidden-xs hidden-sm m-t-30 loaded"
-            style={{ filter: "invert(1)", width: "40px", height: "50px" }}
-            data-src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/logo_icon_black.svg?v=1597160328"
+            style={{  margin:"15px" ,width: "60px", height: "50px" }}
+            data-src={logo}
             alt="Oner Active Logo"
-            src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/logo_icon_black.svg?v=1597160328"
+            src={logo}
             data-was-processed="true"
           />
         </a>

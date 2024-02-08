@@ -140,3 +140,18 @@ background-color: #f1f8fa;
   .blue-button:hover {
     background-color: #33a4cd;
   }
+
+  .example::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.example::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+.example {
+  scrollbar-width: none; /* Firefox 64 */
+}

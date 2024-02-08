@@ -28,7 +28,7 @@ const Modal = ({ setModal }) => {
 
   return (
     <div>
-      <div className="modal-container  open  modal-open">
+      <div className="modal-container  open example  modal-open">
         <div className="modal-content">
           <span
             onClick={() => {
@@ -120,7 +120,7 @@ const Modal = ({ setModal }) => {
             className="container bgcardColor"
           >
             <div className="second_card">
-              <h6 style={{ padding: 20 }}>Member Status</h6>
+              <h6 style={{ padding: 20 ,color:"white"}}>Member Status</h6>
 
               <p>
               With every purchase you make, you move one step closer to levelling up your exclusive member status. Awesome perks and exclusive member-only items are waiting for you.
