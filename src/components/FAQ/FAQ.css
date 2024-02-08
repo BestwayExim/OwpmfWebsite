@@ -1,0 +1,32 @@
+.faq-container {
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .faq-section {
+    margin-bottom: 1rem;
+  }
+  
+  .faq-question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .faq-answer {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: white;
+
+  }
+  
+  .toggle-icon {
+    margin-left: 1rem;
+    font-weight: bold;
+    color: yellow;
+
+  }

@@ -20,15 +20,15 @@ function MyHeader() {
     <nav
       className="navbar sticky-top  navbar"
       style={{
-        backgroundColor: "black",
+        backgroundColor: "#0E0E0E",
         display: "flex",
-        justifyContent: "center",
+     padding:"10px",
         alignItems: "center",
         paddingTop: 0,
       }}
     >
       <div>
-        <a className="navbar-brand d-flex align-items-start" href="#">
+        <a className="" href="#">
           <img
             className="oa-footer__logo-img lazy hidden-xs hidden-sm m-t-30 loaded"
             style={{ filter: "invert(1)", width: "40px", height: "50px" }}
@@ -40,9 +40,7 @@ function MyHeader() {
         </a>
       </div>
 
-      <div>
-        <h1>LOYALTY CLUB</h1>
-      </div>
+   
       {/* <div
         className="container-fluid"
         style={{

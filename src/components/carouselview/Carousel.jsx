@@ -45,7 +45,7 @@ function CarouselBar() {
               src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/loyalty_star_52e78893-4f53-448d-b251-806b60c2c4c0.svg?v=1600419912"
               data-was-processed="true"
             />
-            Click to join the Loyalty Club
+            Click to the Loyalty Club
           </a>
         </Carousel.Item>
         <Carousel.Item>

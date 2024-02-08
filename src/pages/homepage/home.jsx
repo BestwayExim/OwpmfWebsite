@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import "./Home.css";
-import MyBanner from "../../components/banner/Banner";
+// import MyBanner from "../../components/banner/Banner";
 import DoneIcon from "@mui/icons-material/Done";
 import Footer from "../../components/Footer/Footer";
-import { Margin } from "@mui/icons-material";
-import CloseIcon from "@mui/icons-material/Close";
+// import { Margin } from "@mui/icons-material";
+// import CloseIcon from "@mui/icons-materal/Close";
 import Cards from "../../components/thirdSection/Cards";
-import JoinModal from "../../components/Modal/JoinModal";
+import CardGrid from "../../components/cardGrid/CardGrid";
+import FAQ from "../../components/FAQ/FaqPAge";
+// import JoinModal from "../../components/Modal/JoinModal";
 
 function HomePage() {
   const [showModal, setModalOpen] = useState(false);
   return (
-    <div>
-      <JoinModal isModalOpen={setModalOpen} showModal={showModal} />
+    <div className="full_div">
+      {/* <JoinModal isModalOpen={setModalOpen} showModal={showModal} /> */}
       <div className="">
         <div className="headingdiv ">
           <h3 style={{ fontWeight: 600 }}>HOW IT WORKS.</h3>
@@ -26,8 +28,8 @@ function HomePage() {
         <div class="container ">
           <div className="iconsdiv ">
             <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
-              <div class="col">
-                <div className="card">
+              <div class="col ">
+                <div style={{ backgroundColor: "black" }} className="card ">
                   <div className="icon ">
                     <img
                       src="/images/user-icon.png"
@@ -37,18 +39,18 @@ function HomePage() {
                   </div>
                   <div className="card-body mb-4">
                     <h6 className="title">Step 1</h6>
-                    <p className="card-text">Create an account</p>
+                    <p style={{color:"white"}} className="card-text">Create an account</p>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div className="card">
+                <div style={{ backgroundColor: "black" }} className="card">
                   <div className="icon">
                     <img className="iconimg" src="/images/subscribe 1.png" />
                   </div>
                   <div className="card-body mt-2">
                     <h6 className="title">Step 2</h6>
-                    <p className="card-text">
+                    <p  style={{color:"white"}} className="card-text">
                       Earn points for
                       <br />
                       every $ spent
@@ -57,13 +59,13 @@ function HomePage() {
                 </div>
               </div>
               <div class="col">
-                <div className="card">
+                <div style={{ backgroundColor: "black" }} className="card">
                   <div className="icon">
                     <img class="iconimg" src="/images/level-up 1.png" />
                   </div>
                   <div className="card-body">
                     <h6 className="title">Step 3</h6>
-                    <p className="card-text">
+                    <p  style={{color:"white"}} className="card-text">
                       Level up for
                       <br />
                       exclusive perks
@@ -72,13 +74,13 @@ function HomePage() {
                 </div>
               </div>
               <div class="col">
-                <div className="card">
+                <div style={{ backgroundColor: "black" }} className="card">
                   <div className="icon">
                     <img className="iconimg" src="/images/box (1) 1.png" />
                   </div>
                   <div className="card-body">
                     <h6 className="title">Step 3</h6>
-                    <p className="card-text">
+                    <p  style={{color:"white"}} className="card-text">
                       Redeem points &<br />
                       shop for free
                     </p>
@@ -108,8 +110,17 @@ function HomePage() {
 
           {/* Second Section start */}
           <div style={{ marginTop: "80px" }} class="container">
-            <Cards />
-            <div className="iconsdiv ">
+        <CardGrid/>
+
+        <div className="m-5  ">
+        <button style={{color:"black"}} className='btns'>Join Now</button>
+        </div>
+
+
+
+
+
+            {/* <div style={{marginTop:"150px"}} className="iconsdiv ">
               <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
                 <div class="col">
                   <div className="card">
@@ -168,10 +179,10 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div class="container">
+          {/* <div class="container">
             <div className="iconsdiv ">
               <div
                 class="row row-cols-2 row-cols-md-2 row-cols-lg-3"
@@ -225,17 +236,17 @@ function HomePage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="buttonDiv">
-            <button className="btns_small">Join Now</button>
-          </div>
+          {/* <div    className="buttonDiv">
+            <button >Join Now</button>
+          </div> */}
 
           {/* secondSection end Now */}
 
           {/*third Start */}
           <div
-            className="seconthead mt-5"
+            className="navbarIcon mt-5"
             style={{ textAlign: "center", marginBottom: "3%" }}
           >
             <h2>MEMBER STATUS.</h2>
@@ -248,7 +259,7 @@ function HomePage() {
           </div>
           <div className="container">
             <div className="tabledive">
-              <table class="table">
+              <table  class="table">
                 <thead>
                   <tr>
                     <th scope="col"></th>
@@ -273,6 +284,8 @@ function HomePage() {
                         borderTop: 0,
                         textAlign: "end",
                         paddingTop: "2%",
+                        backgroundColor:"#0E0E0E",
+                        color:"white"
                       }}
                     >
                       Spent per calendar year
@@ -420,22 +433,22 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="buttonDiv">
+          {/* <div className="buttonDiv">
             <button className="btns_small">Join Now</button>
-          </div>
+          </div> */}
 
           {/*third End */}
 
           {/* forth Start */}
 
-          <div
+          {/* <div
             className="seconthead mt-5"
             style={{ textAlign: "center", marginBottom: "5%" }}
           >
             <h2>REFER FRIENDS FOR UP TO $50 OFF.</h2>
-          </div>
+          </div> */}
 
-          <div style={{ marginBottom: "50px" }} class="">
+          {/* <div style={{ marginBottom: "50px" }} class="">
             <div className="imagecardiv">
               <div
                 style={{ width: "100%" }}
@@ -513,7 +526,7 @@ function HomePage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="buttonDiv">
             <button className="btns">Join Now</button>
           </div>
@@ -524,7 +537,13 @@ function HomePage() {
             className="container "
             style={{ marginBottom: "5%", textAlign: "left" }}
           >
-            <h4 style={{ fontWeight: 700 }} className="text-center mb-4">
+
+<FAQ/>
+
+
+
+
+            <h4 style={{ fontWeight: 700,color:"white" }} className="text-center mb-4">
               FAQ - GENERAL
             </h4>
 
@@ -543,7 +562,7 @@ function HomePage() {
               membership to our OWPMF.
             </p>
 
-            <h4 style={{ fontWeight: 700 }} className="text-center mb-4">
+            <h4 style={{ fontWeight: 700,color:"white" }} className="text-center mb-4">
               FAQ - PEACE
             </h4>
             {/* <h6 style={{ fontWeight: 700 }}>

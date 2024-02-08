@@ -1,0 +1,36 @@
+.downCard{
+    margin-top:180px;
+    width:14rem;
+    height: 20rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) { /* Adjust breakpoint as needed */
+    .downCard {
+        margin-top:0px;
+     
+      
+    }
+ 
+
+  }
+
+  @media only screen and (max-width: 600px) { /* Adjust breakpoint as needed */
+    .upedCard{
+       
+     
+        width:1rem;
+    }
+ 
+
+  }
+
+.upedCard{
+
+   
+    width:14rem;
+    height: 20rem;
+    background-color: white;
+}
