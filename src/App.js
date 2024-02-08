@@ -8,6 +8,7 @@ import CarouselBar from "./components/carouselview/Carousel";
 import MyBanner from "./components/banner/Banner";
 import HomePage from "./pages/homepage/home";
 import MessageBox from "./components/loyaltyClub/LoyaltyClub";
+import QRModal from "./components/Modal/QRCodeModal";
 
 function App() {
   const { sidenav } = useContext(Sidenavcontext);
@@ -19,6 +20,8 @@ function App() {
       <HomePage />
       <Mysidenav />
       <MessageBox />
+<QRModal/>
+
     </>
   );
 }

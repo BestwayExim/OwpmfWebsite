@@ -32,7 +32,7 @@ function JoinModal(isModalOpen, showModal) {
                     </div>
                     <div className="container p-10">
                       <div className="mb-5 ">
-                        <h1 className="fond-extrabold">join now</h1>
+                        <h1  className="fond-extrabold">join now</h1>
                       </div>
                       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-3 mb-5">
                         {/* <div

@@ -31,7 +31,7 @@ function Footer() {
                 </div>
       </Col>
        
-      <Col md={6} className='text-center container' >
+      {/* <Col md={6} className='text-center container' >
       <div style={{textAlign:"left"}} className='top-catogry container  mt-5'>
       <h6  style={{fontWeight:800}} className="text-uppercase ">SERVICE</h6>
                     <ul className="list-unstyled mb-0">
@@ -70,7 +70,7 @@ function Footer() {
 
 
                
-      </Col>
+      </Col> */}
       <div style={{padding:"20px" ,marginBottom:"30px"}} className='cardd mt-2'>
 <div className="pay">
     <img src="https://cdn.shopify.com/s/files/1/0744/0203/files/payment-visa.svg?607402
@@ -98,7 +98,7 @@ function Footer() {
 
       <Col md={4}  sm={6} xs={6} className='text-center mt-5'> 
       <Row >
-      <Col md={6} className='text-center' >
+      {/* <Col md={6} className='text-center' >
       <div style={{textAlign:"left"}} className='top-catogry '>
                     <h6  style={{fontWeight:800}} className="text-uppercase ">TOP CATEGORIES
 </h6>
@@ -117,9 +117,9 @@ function Footer() {
                       </li>
                     </ul>
                 </div>
-      </Col>
+      </Col> */}
        
-      <Col md={6} >
+      {/* <Col md={6} >
       <div style={{textAlign:"left"}} className='top-reward'>
                     <h6 style={{fontWeight:800}} className="">REWARDS</h6>
                     <ul className="list-unstyled mb-0">
@@ -131,7 +131,7 @@ function Footer() {
                     
                     </ul>
                 </div>
-      </Col>
+      </Col> */}
 
       
       </Row>
@@ -165,7 +165,7 @@ function Footer() {
 
     
         </Row>
-        <div className='fw-bold  mt-2 container ' style={{fontSize:"14px" ,textAlign:"left"}}>© 2024 Oner Active | All Rights Reserved.</div>
+        <div className='fw-bold  mt-2 container ' style={{fontSize:"14px" ,textAlign:"left"}}>© 2024 OWPC Active | All Rights Reserved.</div>
         </Container> 
       
     </div>

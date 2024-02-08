@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Home.css";
 // import MyBanner from "../../components/banner/Banner";
 import DoneIcon from "@mui/icons-material/Done";
@@ -8,9 +8,12 @@ import Footer from "../../components/Footer/Footer";
 import Cards from "../../components/thirdSection/Cards";
 import CardGrid from "../../components/cardGrid/CardGrid";
 import FAQ from "../../components/FAQ/FaqPAge";
+import { QRCodeProvider } from "../..";
 // import JoinModal from "../../components/Modal/JoinModal";
-
+import video from "../../Assets/Video.mp4"
 function HomePage() {
+  const { show, handleClose } = useContext(QRCodeProvider);
+
   const [showModal, setModalOpen] = useState(false);
   return (
     <div className="full_div">
@@ -39,7 +42,9 @@ function HomePage() {
                   </div>
                   <div className="card-body mb-4">
                     <h6 className="title">Step 1</h6>
-                    <p style={{color:"white"}} className="card-text">Create an account</p>
+                    <p style={{ color: "white" }} className="card-text">
+                      Create an account
+                    </p>
                   </div>
                 </div>
               </div>
@@ -50,7 +55,7 @@ function HomePage() {
                   </div>
                   <div className="card-body mt-2">
                     <h6 className="title">Step 2</h6>
-                    <p  style={{color:"white"}} className="card-text">
+                    <p style={{ color: "white" }} className="card-text">
                       Earn points for
                       <br />
                       every $ spent
@@ -65,7 +70,7 @@ function HomePage() {
                   </div>
                   <div className="card-body">
                     <h6 className="title">Step 3</h6>
-                    <p  style={{color:"white"}} className="card-text">
+                    <p style={{ color: "white" }} className="card-text">
                       Level up for
                       <br />
                       exclusive perks
@@ -80,7 +85,7 @@ function HomePage() {
                   </div>
                   <div className="card-body">
                     <h6 className="title">Step 3</h6>
-                    <p  style={{color:"white"}} className="card-text">
+                    <p style={{ color: "white" }} className="card-text">
                       Redeem points &<br />
                       shop for free
                     </p>
@@ -91,7 +96,7 @@ function HomePage() {
           </div>
         </div>
         <div className="buttonDiv">
-          <button className="btns_small" onClick={() => setModalOpen(true)}>
+          <button className="btns_small" onClick={() => handleClose(true)}>
             JOIN NOW
           </button>
         </div>
@@ -110,15 +115,17 @@ function HomePage() {
 
           {/* Second Section start */}
           <div style={{ marginTop: "80px" }} class="container">
-        <CardGrid/>
+            <CardGrid />
 
-        <div className="m-5  ">
-        <button style={{color:"black"}} className='btns'>Join Now</button>
-        </div>
-
-
-
-
+            <div className="m-5  ">
+              <button
+                onClick={() => handleClose(true)}
+                style={{ color: "black" }}
+                className="btns"
+              >
+                Join Now
+              </button>
+            </div>
 
             {/* <div style={{marginTop:"150px"}} className="iconsdiv ">
               <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
@@ -259,7 +266,7 @@ function HomePage() {
           </div>
           <div className="container">
             <div className="tabledive">
-              <table  class="table">
+              <table class="table">
                 <thead>
                   <tr>
                     <th scope="col"></th>
@@ -284,8 +291,8 @@ function HomePage() {
                         borderTop: 0,
                         textAlign: "end",
                         paddingTop: "2%",
-                        backgroundColor:"#0E0E0E",
-                        color:"white"
+                        backgroundColor: "#0E0E0E",
+                        color: "white",
                       }}
                     >
                       Spent per calendar year
@@ -528,8 +535,25 @@ function HomePage() {
             </div>
           </div> */}
           <div className="buttonDiv">
-            <button className="btns">Join Now</button>
+            <button onClick={() => handleClose(true)} className="btns">
+              Join Now
+            </button>
           </div>
+
+
+
+          <div style={{margin:"50px"}} className="">
+       
+        <video width="100%" height="auto" controls>
+          <source src={video}type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+<div>
+
+</div>
+
 
           {/* forth End */}
           <div
@@ -537,78 +561,9 @@ function HomePage() {
             className="container "
             style={{ marginBottom: "5%", textAlign: "left" }}
           >
-
-<FAQ/>
-
-
-
-
-            <h4 style={{ fontWeight: 700,color:"white" }} className="text-center mb-4">
-              FAQ - GENERAL
-            </h4>
-
-            <h6 style={{ fontWeight: 700 }}>Q: What is the OWPMF??</h6>
-            <p>
-              A: It is our way of saying “thank you” for being a loyal customer.
-              Earn points (Peace Points) and redeem when making purchases, level
-              up to get exclusive perks, or benefit from referring friends.
-            </p>
-            <h6 style={{ fontWeight: 700 }}>
-              Q: How to become a Loyalty club member?
-            </h6>
-            <p>
-              A: As soon as you sign up with OWPMF, or if you are an existing
-              registered customer, you will automatically receive free
-              membership to our OWPMF.
-            </p>
-
-            <h4 style={{ fontWeight: 700,color:"white" }} className="text-center mb-4">
-              FAQ - PEACE
-            </h4>
-            {/* <h6 style={{ fontWeight: 700 }}>
-              Q: What is the Oner Active Loyalty member club?
-            </h6>
-            <p>
-              A: It is our way of saying “thank you” for being a loyal customer.
-              Earn points (Peace Points) and redeem when making purchases, level
-              up to get exclusive perks, or benefit from referring friends.
-            </p> */}
-            <h6 style={{ fontWeight: 700 }}>
-              Q: How to become a Loyalty club member?
-            </h6>
-            <p>
-              A: As soon as you sign up with Oner Active, or if you are an
-              existing registered customer, you will automatically receive free
-              membership to our Loyalty Club
-            </p>
-            <h6 style={{ fontWeight: 700 }}>
-              {" "}
-              Q: What is the Oner Active Loyalty member club?
-            </h6>
-            <p>
-              A: It is our way of saying “thank you” for being a loyal customer.
-              Earn points (Peace Points) and redeem when making purchases, level
-              up to get exclusive perks, or benefit from referring friends.
-            </p>
-            <h6 style={{ fontWeight: 700 }}>
-              Q: How to become a Loyalty club member?
-            </h6>
-            <p>
-              A: As soon as you sign up with Oner Active, or if you are an
-              existing registered customer, you will automatically receive free
-              membership to our Loyalty Club
-            </p>
+            <FAQ />
           </div>
-          <div className="banner2">
-            <div className="text">
-              <h2>IT'S YOUR TURN!</h2>
-              <p>
-                Join today and collect loyalty points to gain valuable benefits.
-              </p>
-
-              <button className="btns">Join Now</button>
-            </div>
-          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.7045916121378!2d55.29880042533457!3d25.155657905637874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f688c5516ea0f%3A0x44800f32689f57e2!2sThe%20Meydan%20Hotel!5e0!3m2!1sen!2sin!4v1707421252815!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
           <Footer />
         </div>
