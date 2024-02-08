@@ -66,7 +66,7 @@ function HomePage() {
                   <div className="card-body">
                     <h6 className="title">Step 3</h6>
                     <p  style={{color:"white"}} className="card-text">
-                      Level up for
+                      Subscribe for
                       <br />
                       exclusive perks
                     </p>
@@ -79,10 +79,10 @@ function HomePage() {
                     <img className="iconimg" src="/images/box (1) 1.png" />
                   </div>
                   <div className="card-body">
-                    <h6 className="title">Step 3</h6>
+                    <h6 className="title">Step 4</h6>
                     <p  style={{color:"white"}} className="card-text">
-                      Redeem points &<br />
-                      shop for free
+                      Redeem points <br />
+                      exclusive discounts
                     </p>
                   </div>
                 </div>
@@ -290,10 +290,8 @@ function HomePage() {
                     >
                       Spent per calendar year
                     </th>
-                    <th style={{ backgroundColor: "#417D98" }}>
+                    <th style={{ backgroundColor: "#417D98"}}>
                       Neptune
-                      <br />
-                      Free
                     </th>
                     <th style={{ backgroundColor: "#D7C57F" }}>
                       SATURN
