@@ -10,20 +10,20 @@ function Footer() {
         <Container>
         <Row className='footerr'>
            
-      <Col md={4} sm={6} xs={6} className='mt-2'> 
+      <Col md={4} sm={6} xs={6} className=''> 
       <Row >
       <Col md={6} className=''>
       <div style={{textAlign:"left"}} className='container'>
-                    <h6  style={{fontWeight:800}} className="text-uppercase mt-5">ONER ACTIVE</h6>
+                    <h6  style={{fontWeight:800,marginLeft:"10px"}} className="text-uppercase ">OWPMF</h6>
                     <ul style={{ }} className="list-unstyled mb-0 container ">
                       <li>
                         <a className="text-secondary" href="#!">About us</a>
                       </li>
                       <li>
-                        <a className="text-secondary" href="#!">Careers</a>
+                        <a className="text-secondary" href="#!">Term & Conditions</a>
                       </li>
                       <li>
-                        <a className="text-secondary" href="#!">Sitemap</a>
+                        <a className="text-secondary" href="#!">Privacy Policy</a>
                       </li>
                       <li>
                       </li>
@@ -96,7 +96,7 @@ function Footer() {
       </Row>
       </Col>
 
-      <Col md={4}  sm={6} xs={6} className='text-center mt-5'> 
+      <Col md={4}  sm={6} xs={6} className='text-center '> 
       <Row >
       {/* <Col md={6} className='text-center' >
       <div style={{textAlign:"left"}} className='top-catogry '>
@@ -138,12 +138,12 @@ function Footer() {
       </Col> 
 
       <Col md={4} className='container text-center' >
-       <Row className='main-contain mt-5' >
+       <Row className='main-contain ' >
            <div className='input-boxs'>
-           <h6 style={{fontWeight:700}} className="text-uppercase ms-4">SIGN UP FOR OUR NEWSLETTER</h6>
+           {/* <h6 style={{fontWeight:700}} className="text-uppercase ms-4">SIGN UP FOR OUR NEWSLETTER</h6>
            <input className='inpu' type='text' placeholder='email'/><button className='btn-last'><i class="fa-solid fa-greater-than" style={{color:'white'}}/></button>
-            
-            <div className='out-log pt-1 mt-4'>
+             */}
+            <div className='out-log pt-1 '>
                 <div className="logg"><i class="fa-brands fa-instagram fa-lg" style={{color:"white"}}></i></div>
                 <div className="logg"><i class="fa-brands fa-facebook" style={{color:"white"}}></i></div>
                 <div className="logg"><i class="fa-brands fa-youtube" style={{color:"white"}}></i></div>
@@ -152,7 +152,7 @@ function Footer() {
                 <div className="logg"><i class="fa-brands fa-pinterest" style={{color:"white"}} ></i></div>
                 <div className="logg"><i class="fa-brands fa-square-snapchat" style={{color:"white"}}></i></div>
             </div>
-            <div className='out-log pt-1 mt-3'>
+            <div className='out-log pt-1 '>
                <div className='LOG-last'>
                 <img src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/logo_icon_black.svg?v=1597160328" alt="" srcset="" />
                </div>
@@ -165,7 +165,7 @@ function Footer() {
 
     
         </Row>
-        <div className='fw-bold  mt-2 container ' style={{fontSize:"14px" ,textAlign:"left"}}>© 2024 OWPC Active | All Rights Reserved.</div>
+        <div className='fw-bold  container ' style={{fontSize:"14px" ,textAlign:"center" ,color:"white", paddingBottom:"15px"}}>© 2024 OWPC Active | All Rights Reserved.</div>
         </Container> 
       
     </div>

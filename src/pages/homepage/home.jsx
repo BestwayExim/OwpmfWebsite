@@ -10,7 +10,7 @@ import CardGrid from "../../components/cardGrid/CardGrid";
 import FAQ from "../../components/FAQ/FaqPAge";
 import { QRCodeProvider } from "../..";
 // import JoinModal from "../../components/Modal/JoinModal";
-import video from "../../Assets/Video.mp4"
+import video from "../../Assets/Video.mp4";
 function HomePage() {
   const { show, handleClose } = useContext(QRCodeProvider);
 
@@ -19,8 +19,8 @@ function HomePage() {
     <div className="full_div">
       {/* <JoinModal isModalOpen={setModalOpen} showModal={showModal} /> */}
       <div className="">
-        <div style={{marginBottom:"90px"}} className="headingdiv ">
-          <h3 style={{ fontWeight: 600,color:"white" }}>HOW IT WORKS.</h3>
+        <div style={{ marginBottom: "90px" }} className="headingdiv ">
+          <h3 style={{ fontWeight: 600, color: "white" }}>HOW IT WORKS.</h3>
           <p>
             Earn peace Points and redeem them when making purchases, level up
             your member status to <br />
@@ -28,8 +28,8 @@ function HomePage() {
           </p>
         </div>
 
-        <div  class="container ">
-          <div   className="iconsdiv ">
+        <div class="container ">
+          <div className="iconsdiv ">
             <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
               <div class="col ">
                 <div style={{ backgroundColor: "black" }} className="card ">
@@ -297,9 +297,7 @@ function HomePage() {
                     >
                       Spent per calendar year
                     </th>
-                    <th style={{ backgroundColor: "#417D98"}}>
-                      Neptune
-                    </th>
+                    <th style={{ backgroundColor: "#417D98" }}>Neptune</th>
                     <th style={{ backgroundColor: "#D7C57F" }}>
                       SATURN
                       <br />
@@ -317,14 +315,20 @@ function HomePage() {
                     </th>
                   </tr>
                   <tr>
-                    <td scope="row">
-                      Loyalty Point Gain : 1 point per $ Spent
-                    </td>
-                    <td>1 Points</td>
-                    <td>3 Points</td>
-                    <td>5 Points</td>
+                    <td scope="row">Annual  charge</td>
+                    <td>Free Tier</td>
+                    <td>250 OWPC </td>
+                    <td>750 OWPC</td>
 
-                    <td>10 Points</td>
+                    <td>1500 OWPC</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Loyalty Point Gain</td>
+                    <td>1 Points per $ spent</td>
+                    <td>3 Points per $ spent</td>
+                    <td>5 Points per $ spent</td>
+
+                    <td>10 Points per $ spent</td>
                   </tr>
 
                   <tr>
@@ -359,16 +363,16 @@ function HomePage() {
                     </td>
                   </tr>
                   <tr>
-                    <td>Tele Consultation Service @ 25% Discount</td>
+                    <td>Tele Consultation Service </td>
                     <td style={{ border: "0" }}></td>
                     <td>
-                      <DoneIcon />
+                   25 % Discount
                     </td>
                     <td>
-                      <DoneIcon />
+                   50 % Discount
                     </td>
                     <td>
-                      <DoneIcon />
+                   Free
                     </td>
                   </tr>
                   <tr>
@@ -385,14 +389,14 @@ function HomePage() {
                     </td>
                   </tr>
                   <tr>
-                    <td>Invitation to special Events</td>
+                    <td>Invitation </td>
                     <td style={{ border: "0" }}></td>
                     <td style={{ border: "0" }}></td>
                     <td>
-                      <DoneIcon />
+                   spacial Events
                     </td>
                     <td>
-                      <DoneIcon />
+                   Premium invitation to spacial events
                     </td>
                   </tr>
                   <tr>
@@ -410,7 +414,9 @@ function HomePage() {
                     <td>Free Travel Consultation</td>
                     <td style={{ border: "0" }}></td>
                     <td style={{ border: "0" }}></td>
-                    <td style={{ border: "0" }}></td>
+                    <td>
+                      <DoneIcon />
+                    </td>
                     <td>
                       <DoneIcon />
                     </td>
@@ -538,20 +544,14 @@ function HomePage() {
             </button>
           </div>
 
+          <div style={{ margin: "50px" }} className="">
+            <video width="100%" height="auto" controls>
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
-
-          <div style={{margin:"50px"}} className="">
-       
-        <video width="100%" height="auto" controls>
-          <source src={video}type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-<div>
-
-</div>
-
+          <div></div>
 
           {/* forth End */}
           <div
@@ -562,8 +562,14 @@ function HomePage() {
             <FAQ />
           </div>
           <div className="p-5 ">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.7045916121378!2d55.29880042533457!3d25.155657905637874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f688c5516ea0f%3A0x44800f32689f57e2!2sThe%20Meydan%20Hotel!5e0!3m2!1sen!2sin!4v1707421252815!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.7045916121378!2d55.29880042533457!3d25.155657905637874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f688c5516ea0f%3A0x44800f32689f57e2!2sThe%20Meydan%20Hotel!5e0!3m2!1sen!2sin!4v1707421252815!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
           <Footer />
         </div>

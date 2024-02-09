@@ -2,12 +2,11 @@
     margin-top:180px;
     width:14rem;
     height: 20rem;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #F1BA0C;
+   
+    border-radius: 10px;
 }
-@media only screen and (max-width: 600px) { /* Adjust breakpoint as needed */
+@media only screen and (max-width: 940px) { /* Adjust breakpoint as needed */
     .downCard {
         margin-top:0px;
      
@@ -29,8 +28,8 @@
 
 .upedCard{
 
-   
+    border-radius: 10px;
     width:14rem;
     height: 20rem;
-    background-color: white;
+    background-color: #F1BA0C;
 }

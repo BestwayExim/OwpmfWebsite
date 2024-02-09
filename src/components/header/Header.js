@@ -27,11 +27,15 @@ function MyHeader() {
         paddingTop: 0,
       }}
     >
+
+
+
+
       <div>
         <a className="" href="#">
           <img
             className="oa-footer__logo-img lazy hidden-xs hidden-sm m-t-30 loaded"
-            style={{  margin:"15px" ,width: "60px", height: "50px" }}
+            style={{  margin:"15px" ,width: "50px", height: "40px" }}
             data-src={logo}
             alt="Oner Active Logo"
             src={logo}

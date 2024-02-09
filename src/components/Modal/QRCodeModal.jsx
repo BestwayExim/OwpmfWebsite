@@ -44,8 +44,8 @@ const QRModal = ({ isOpen, onClose, title, imageUrl }) => {
             variants={modalVariants}
           >
             <div className="modal-header">
-              <h2 style={{color:'black',display:'flex', justifyContent:"center"}}>Download App</h2>
-              <button onClick={closeModal}>Close</button>
+              <h6 style={{color:'white',display:'flex', justifyContent:"center"}}>Access OWPMF Loyalty App</h6>
+              <button  style={{color:"white"}} onClick={closeModal}>X</button>
             </div>
             <div className="modal-body">
               <img src={image} alt={title} />

@@ -3,11 +3,12 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax values as needed */
     gap: 10px; 
     justify-content: center;
+
 }
 
 @media only screen and (max-width: 975px) { /* Adjust breakpoint as needed */
     .gridStyle {
-        grid-template-columns: repeat(2, 1fr); /* This ensures two cards per row on screens up to 940px */
+        grid-template-columns: repeat(1, 1fr); /* This ensures two cards per row on screens up to 940px */
     }
     
     /* Additional styles for mobile screens */
@@ -17,7 +18,7 @@
         }
     }
 }
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 975px) { 
     .makeitcenter{
 display: flex;
 justify-content: center;
