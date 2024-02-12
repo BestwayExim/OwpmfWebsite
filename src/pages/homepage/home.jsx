@@ -21,9 +21,9 @@ function HomePage() {
       <div className="">
         <div style={{ marginBottom: "90px" }} className="headingdiv ">
           <h3 style={{ fontWeight: 600, color: "white" }}>HOW IT WORKS.</h3>
-          <p>
+          <p className="p-3">
             Earn peace Points and redeem them when making purchases, level up
-            your member status to <br />
+            your member status to 
             get exclusive perks, and benefit from referring friends.
           </p>
         </div>
@@ -57,7 +57,7 @@ function HomePage() {
                     <h6 className="title">Step 2</h6>
                     <p style={{ color: "white" }} className="card-text">
                       Earn points for
-                      <br />
+                    
                       every $ spent
                     </p>
                   </div>
@@ -84,7 +84,7 @@ function HomePage() {
                     <img className="iconimg" src="/images/box (1) 1.png" />
                   </div>
                   <div className="card-body">
-                    <h6 className="title">Step 3</h6>
+                    <h6 className="title">Step 4</h6>
                     <p style={{ color: "white" }} className="card-text">
                       Redeem points &<br />
                       shop for free

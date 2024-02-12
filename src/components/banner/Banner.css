@@ -99,7 +99,7 @@ p{
   }
 
   .banner {
-    background: url("../../Assets//images//card.gif");
+    background: url("../../Assets//images//cardmobile.gif");
     height: 300px;
 
     background-size: cover;
@@ -112,7 +112,7 @@ p{
   }
 
   .banner2 {
-    background: url("../../Assets//images//card.gif");
+    background: url("../../Assets//images//cardmobile.gif");
     height: 250px;
     width: 100%;
 
