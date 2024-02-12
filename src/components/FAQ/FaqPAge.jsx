@@ -44,13 +44,6 @@ const FAQ = () => {
           FAQ - GENERAL
         </h4>
 
-        <div
-          className="faq-question"
-          onClick={() => toggleVisibility("freeTrial")}
-        >
-          What types of services are covered by the loyalty program?
-          <span className="toggle-icon">{visible.freeTrial ? "-" : "+"}</span>
-        </div>
         {visible.freeTrial && (
           <div className="faq-answer">
             The loyalty program offers benefits and discounts on a wide range of
@@ -61,45 +54,7 @@ const FAQ = () => {
         )}
       </div>
 
-      <div className="faq-section">
-        <div
-          className="faq-question"
-          onClick={() => toggleVisibility("changePlan")}
-        >
-          How to become a Loyalty club member?
-          <span className="toggle-icon">{visible.changePlan ? "-" : "+"}</span>
-        </div>
-        {/* Placeholder for the answer */}
-        {visible.changePlan && (
-          <div className="faq-answer">
-            You can earn loyalty points by making purchases or engaging with
-            participating merchants. The specific ways to earn points may vary
-            depending on the merchant and their loyalty program terms. Check our
-            platform for details on earning opportunities.
-          </div>
-        )}
-      </div>
-
-      <div className="faq-section">
-        <div
-          className="faq-question"
-          onClick={() => toggleVisibility("cancellationPolicy")}
-        >
-          What is your cancellation policy?
-          <span className="toggle-icon">
-            {visible.cancellationPolicy ? "-" : "+"}
-          </span>
-        </div>
-        {/* Placeholder for the answer */}
-        {visible.cancellationPolicy && (
-          <div className="faq-answer">
-            Once you have accumulated enough loyalty points, you can redeem them
-            for rewards such as discounts, gift cards, merchandise, or exclusive
-            experiences. The redemption process may vary depending on the
-            merchant and the specific reward you want to claim.
-          </div>
-        )}
-      </div>
+      <div className="faq-section">{/* Placeholder for the answer */}</div>
 
       <div className="faq-section">
         <div
@@ -142,10 +97,7 @@ const FAQ = () => {
       </div>
 
       <div className="faq-section">
-        <div
-          className="faq-question"
-          onClick={() => toggleVisibility("limit")}
-        >
+        <div className="faq-question" onClick={() => toggleVisibility("limit")}>
           Is there a limit to the number of loyalty points I can earn?
           <span className="toggle-icon">{visible.limit ? "-" : "+"}</span>
         </div>
@@ -426,9 +378,7 @@ const FAQ = () => {
         >
           Do I need to make an appointment or reservation to access loyalty
           program benefits?
-          <span className="toggle-icon">
-            {visible.appoinments ? "-" : "+"}
-          </span>
+          <span className="toggle-icon">{visible.appoinments ? "-" : "+"}</span>
         </div>
         {/* Placeholder for the answer */}
         {visible.appoinments && (

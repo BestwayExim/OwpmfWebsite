@@ -71,27 +71,7 @@ function Footer() {
 
                
       </Col> */}
-      <div style={{padding:"20px" ,marginBottom:"30px"}} className='cardd mt-2'>
-<div className="pay">
-    <img src="https://cdn.shopify.com/s/files/1/0744/0203/files/payment-visa.svg?607402
-" alt="" />
-</div>
-<div className="pay">
-    <img src="	https://cdn.shopify.com/s/files/1/0744/0203/files/payment-paypal.svg?607402
-" alt="" />
-</div>
-<div className="pay">
-    <img src="https://cdn.shopify.com/s/files/1/0744/0203/files/payment-mastercard.svg?607402
-" alt="" />
-</div>
-<div className="pay">
-    <img src="	https://cdn.shopify.com/s/files/1/0744/0203/files/payment-american-express.svg?607402" style={{width:"30px"}} alt="" />
-</div>
-<div className="pay">
-    <img src="		https://cdn.shopify.com/s/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg
-" alt="" />
-</div>
-                </div>
+    
 
       </Row>
       </Col>
@@ -152,6 +132,28 @@ function Footer() {
                 <div className="logg"><i class="fa-brands fa-pinterest" style={{color:"white"}} ></i></div>
                 <div className="logg"><i class="fa-brands fa-square-snapchat" style={{color:"white"}}></i></div>
             </div>
+            <div style={{padding:"20px" ,marginBottom:"30px"}} className='cardd mt-2'>
+<div className="pay">
+    <img src="https://cdn.shopify.com/s/files/1/0744/0203/files/payment-visa.svg?607402
+" alt="" />
+</div>
+<div className="pay">
+    <img src="	https://cdn.shopify.com/s/files/1/0744/0203/files/payment-paypal.svg?607402
+" alt="" />
+</div>
+<div className="pay">
+    <img src="https://cdn.shopify.com/s/files/1/0744/0203/files/payment-mastercard.svg?607402
+" alt="" />
+</div>
+<div className="pay">
+    <img src="	https://cdn.shopify.com/s/files/1/0744/0203/files/payment-american-express.svg?607402" style={{width:"30px"}} alt="" />
+</div>
+<div className="pay">
+    <img src="		https://cdn.shopify.com/s/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg
+" alt="" />
+</div>
+                </div>
+
             <div className='out-log pt-1 '>
                <div className='LOG-last'>
                 <img src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/logo_icon_black.svg?v=1597160328" alt="" srcset="" />

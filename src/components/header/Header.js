@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./header.css";
 import "bootstrap/dist/css/bootstrap.css";
-import  logo from "../../Assets/images/logo.png"
+import { motion } from "framer-motion";
+import logo from "../../Assets/images/logo.png";
 import InsightsIcon from "@mui/icons-material/Insights";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -11,93 +12,120 @@ import { Sidenavcontext } from "../..";
 import { display } from "@mui/system";
 
 function MyHeader() {
+  
   const { sidenav, setSidenav } = useContext(Sidenavcontext);
   const handleNavbarToggle = () => {
     setSidenav(!sidenav);
   };
 
+
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  useEffect(() => {
+    const handleResize = () => {
+      console.log(window.innerWidth);
+      console.log(logos.length);
+      setIsMobile(window.innerWidth < 768);
+
+ 
+
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+  let logos
+
+  if(window.innerWidth < 768){
+      
+    logos = [
+       { src: logo, delay: 0 },
+       { src: logo, delay: 4 },
+       { src: logo, delay: 8 },
+   
+   
+       // Add more logo objects with different delays as needed
+     ];
+   
+   }
+   else{
+     
+    logos = [
+       { src: logo, delay: 0 },
+       { src: logo, delay: 4 },
+       { src: logo, delay: 8 },
+       { src: logo, delay: 8 },
+       { src: logo, delay: 12 },
+   
+       // Add more logo objects with different delays as needed
+     ];
+   }
+
+
+console.log(logos.length % 2 );
   return (
     <nav
       className="navbar sticky-top  navbar"
       style={{
         backgroundColor: "#0E0E0E",
         display: "flex",
-     padding:"10px",
+        padding: "10px",
         alignItems: "center",
         paddingTop: 0,
+        justifyContent: "center",
       }}
     >
-
-
-
-
       <div>
-        <a className="" href="#">
-          <img
-            className="oa-footer__logo-img lazy hidden-xs hidden-sm m-t-30 loaded"
-            style={{  margin:"15px" ,width: "50px", height: "40px" }}
-            data-src={logo}
-            alt="Oner Active Logo"
-            src={logo}
-            data-was-processed="true"
-          />
+        <a className="flex" href="#">
+          <div style={{ position: "relative" }}>
+            {logos.map((logo, index) => {
+              
+              if (index === Math.floor((0 + logos.length -1) / 2)) {
+                return (
+                  <motion.img
+                    key={index}
+                    src={logo.src}
+                    alt="Oner Active Logo"
+                    style={{
+                      margin: "15px",
+                      width: "50px",
+                      height: "40px",
+                      opacity: 1, // You can set initial styles directly here
+                    }}
+                  />
+                );
+              } else {
+                return (
+                  <motion.img
+                    key={index}
+                    src={logo.src}
+                    alt="Oner Active Logo"
+                    style={{
+                      margin: "15px",
+                      width: "50px",
+                      height: "40px",
+                      opacity: 0, // You can set initial styles directly here
+                    }}
+                    initial={{ opacity: 0 }} // Define initial state here
+                    animate={{
+                      opacity: [0, 1, 1, 0, 0],
+                      transition: {
+                        duration: 16,
+                        delay: logo.delay, // Ensure delay is respected for each logo
+                        repeat: Infinity, // Use repeat: Infinity for continuous loop
+                      },
+                    }}
+                  />
+                );
+              }
+            })}
+          </div>
         </a>
       </div>
-
-   
-      {/* <div
-        className="container-fluid"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      > */}
-      {/* <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          onClick={handleNavbarToggle}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button> */}
-
-      {/* <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-
-          <div
-            style={{
-              display: "flex",
-              color: "white",
-              //justifyContent: "space-between",
-              marginRight: "5%",
-            }}
-          >
-            <WorkOutlineIcon style={{ marginRight: "15%" }} />
-            <SearchIcon style={{ marginRight: "15%" }} />
-            <PersonOutlineIcon style={{ marginRight: "15%" }} />
-            <FavoriteBorderIcon />
-          </div>
-        </div> */}
-      {/* </div> */}
     </nav>
   );
 }

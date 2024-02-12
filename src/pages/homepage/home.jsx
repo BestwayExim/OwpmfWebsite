@@ -9,10 +9,15 @@ import Cards from "../../components/thirdSection/Cards";
 import CardGrid from "../../components/cardGrid/CardGrid";
 import FAQ from "../../components/FAQ/FaqPAge";
 import { QRCodeProvider } from "../..";
+import ReactPlayer from "react-player";
+
 // import JoinModal from "../../components/Modal/JoinModal";
 import video from "../../Assets/Video.mp4";
+import TextField from "@mui/material/TextField";
 function HomePage() {
   const { show, handleClose } = useContext(QRCodeProvider);
+
+  const [mute, setmute] = useState(true);
 
   const [showModal, setModalOpen] = useState(false);
   return (
@@ -23,8 +28,8 @@ function HomePage() {
           <h3 style={{ fontWeight: 600, color: "white" }}>HOW IT WORKS.</h3>
           <p className="p-3">
             Earn peace Points and redeem them when making purchases, level up
-            your member status to 
-            get exclusive perks, and benefit from referring friends.
+            your member status to get exclusive perks, and benefit from
+            referring friends.
           </p>
         </div>
 
@@ -69,7 +74,7 @@ function HomePage() {
                   <div className="card-body">
                     <h6 className="title">Step 3</h6>
                     <p style={{ color: "white" }} className="card-text">
-                     subscribe for 
+                      subscribe for
                       <br />
                       exclusive perks
                     </p>
@@ -85,7 +90,7 @@ function HomePage() {
                     <h6 className="title">Step 4</h6>
                     <p style={{ color: "white" }} className="card-text">
                       Redeem points for <br />
-                    exclusive discounts
+                      exclusive discounts
                     </p>
                   </div>
                 </div>
@@ -256,7 +261,6 @@ function HomePage() {
           >
             <h2>MEMBER STATUS.</h2>
             <p className="p-4 ">
-        
               <br /> Awesome perks and exclusive member-only items are waiting
               for you.
             </p>
@@ -312,7 +316,7 @@ function HomePage() {
                     </th>
                   </tr>
                   <tr>
-                    <td scope="row">Annual  charge</td>
+                    <td scope="row">Annual charge</td>
                     <td>Free Tier</td>
                     <td>250 OWPC </td>
                     <td>750 OWPC</td>
@@ -362,15 +366,9 @@ function HomePage() {
                   <tr>
                     <td>Tele Consultation Service </td>
                     <td style={{ border: "0" }}></td>
-                    <td>
-                   25 % Discount
-                    </td>
-                    <td>
-                   50 % Discount
-                    </td>
-                    <td>
-                   Free
-                    </td>
+                    <td>25 % Discount</td>
+                    <td>50 % Discount</td>
+                    <td>Free</td>
                   </tr>
                   <tr>
                     <td>Free OWPC Membership Gifts</td>
@@ -389,12 +387,8 @@ function HomePage() {
                     <td>Invitation </td>
                     <td style={{ border: "0" }}></td>
                     <td style={{ border: "0" }}></td>
-                    <td>
-                   spacial Events
-                    </td>
-                    <td>
-                   Premium invitation to spacial events
-                    </td>
+                    <td>spacial Events</td>
+                    <td>Premium invitation to spacial events</td>
                   </tr>
                   <tr>
                     <td>Discount offers at Stores</td>
@@ -542,10 +536,12 @@ function HomePage() {
           </div>
 
           <div style={{ margin: "50px" }} className="">
-            <video width="100%" height="auto" controls>
+            <video autoPlay muted loop width="100%" height="auto">
               <source src={video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+
+         
           </div>
 
           <div></div>
@@ -562,7 +558,7 @@ function HomePage() {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.7045916121378!2d55.29880042533457!3d25.155657905637874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f688c5516ea0f%3A0x44800f32689f57e2!2sThe%20Meydan%20Hotel!5e0!3m2!1sen!2sin!4v1707421252815!5m2!1sen!2sin"
               width="100%"
-              height="450"
+              height="300"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"

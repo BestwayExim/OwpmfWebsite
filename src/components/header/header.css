@@ -6,6 +6,8 @@ body {
 }
 .navbar {
   height: 60px;
+  display: flex;
+  justify-content: center;
 
 }
 /* .navbar {
@@ -23,4 +25,68 @@ body {
 .navbarIcon{
   margin-left: 30px;
   padding-left: 20px;
+}
+
+
+.oa-footer__logo-img {
+  margin: 15px;
+  width: 50px;
+  height: 40px;
+  opacity: 0;
+
+  animation: fadeInOut 12s infinite;
+}
+
+.oa-footer__logo-img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.oa-footer__logo-img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.oa-footer__logo-img:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.oa-footer__logo-img:nth-child(4) {
+  animation-delay: 12s;
+}
+/* .oa-footer__logo-img:nth-child(5) {
+  animation-delay: 16s;
+}
+.oa-footer__logo-img:nth-child(6) {
+  animation-delay: 20s;
+}
+.oa-footer__logo-img:nth-child(7) {
+  animation-delay: 24s;
+}
+.oa-footer__logo-img:nth-child(8) {
+  animation-delay: 28s;
+}
+.oa-footer__logo-img:nth-child(9) {
+  animation-delay: 32s;
+}
+.oa-footer__logo-img:nth-child(10) {
+  animation-delay: 36s;
+} */
+
+
+
+@keyframes fadeInOut {
+  10%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+
+/* Hide extra images on mobile devices */
+/* Hide images on mobile devices except the center image */
+@media (max-width: 768px) {
+  .hide-on-mobile-except-center {
+    display: none;
+  }
 }
