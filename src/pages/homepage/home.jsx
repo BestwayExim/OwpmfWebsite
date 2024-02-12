@@ -61,7 +61,7 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-              <div class="col mt-md-5 ">
+              <div class="col mt-md-0 mt-5 ">
                 <div style={{ backgroundColor: "black" }} className="card">
                   <div className="icon">
                     <img class="iconimg" src="/images/level-up 1.png" />
@@ -76,7 +76,7 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-              <div class="col mt-md-5 ">
+              <div class="col mt-md-0 mt-5">
                 <div style={{ backgroundColor: "black" }} className="card">
                   <div className="icon">
                     <img className="iconimg" src="/images/box (1) 1.png" />
