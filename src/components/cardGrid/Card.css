@@ -1,10 +1,10 @@
 .downCard{
     margin-top:180px;
-    width:14rem;
+    width:90%;
     height: 20rem;
     background-color: #F1BA0C;
-   
     border-radius: 10px;
+ 
 }
 @media only screen and (max-width: 940px) { /* Adjust breakpoint as needed */
     .downCard {
@@ -29,7 +29,7 @@
 .upedCard{
 
     border-radius: 10px;
-    width:14rem;
+    width:90%;
     height: 20rem;
     background-color: #F1BA0C;
 }

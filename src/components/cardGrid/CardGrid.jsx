@@ -10,11 +10,11 @@ import image3 from "../../Assets/images/Card4.png"
 const CardGrid = () => {
   return (
 
-    <div  className='makeitcenter'>
+    <div  className='makeitcenter  '>
 
 <div   className=" gridStyle">
     <div style={{display:"flex",justifyContent:"center"}}>
-    <CardSec image={image1} title="500 coins" disc="Membership Benefits"/>
+    <CardSec image={image1} title="+500 points" disc="Membership Benefits"/>
 
     </div>
     <div style={{display:"flex",justifyContent:"center"}}>
@@ -23,7 +23,7 @@ const CardGrid = () => {
     </div>
 
       <div style={{display:"flex",justifyContent:"center"}}>
-      <CardSec  image={image3} title="Every purchase" disc="With every purchase you make, you earn peace coins"/> 
+      <CardSec  image={image3} title="Every purchase" disc="With every purchase you make, you earn peace points"/> 
 
       </div>
 

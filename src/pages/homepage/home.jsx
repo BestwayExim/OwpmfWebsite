@@ -69,7 +69,7 @@ function HomePage() {
                   <div className="card-body">
                     <h6 className="title">Step 3</h6>
                     <p style={{ color: "white" }} className="card-text">
-                      Level up for
+                     subscribe for 
                       <br />
                       exclusive perks
                     </p>
@@ -84,8 +84,8 @@ function HomePage() {
                   <div className="card-body">
                     <h6 className="title">Step 4</h6>
                     <p style={{ color: "white" }} className="card-text">
-                      Redeem points &<br />
-                      shop for free
+                      Redeem points for <br />
+                    exclusive discounts
                     </p>
                   </div>
                 </div>
@@ -93,15 +93,15 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="buttonDiv">
+        <div className="buttonDiv mt-4">
           <button className="btns_small" onClick={() => handleClose(true)}>
             JOIN NOW
           </button>
         </div>
 
-        <p style={{ textAlign: "center", marginBottom: " 4%" }}></p>
+        <p style={{ textAlign: "center", marginBottom: " 3%" }}></p>
         <div className="seconthead" style={{ textAlign: "center" }}>
-          <div className="seconthead mt-5 " style={{ textAlign: "center" }}>
+          <div className="seconthead mt-7  " style={{ textAlign: "center" }}>
             <h3 style={{ fontWeight: 700, marginBottom: "20px" }}>
               HOW TO EARN POINTS.
             </h3>
@@ -115,7 +115,7 @@ function HomePage() {
           <div style={{ marginTop: "80px" }} class="container">
             <CardGrid />
 
-            <div className="m-5  ">
+            <div className="m-5    ">
               <button
                 onClick={() => handleClose(true)}
                 style={{ color: "black" }}
@@ -251,13 +251,12 @@ function HomePage() {
 
           {/*third Start */}
           <div
-            className="navbarIcon mt-5"
+            className=" mt-5"
             style={{ textAlign: "center", marginBottom: "3%" }}
           >
             <h2>MEMBER STATUS.</h2>
-            <p>
-              With every purchase you make, you move one step closer to
-              levelling up your exclusive member status.
+            <p className="p-4 ">
+        
               <br /> Awesome perks and exclusive member-only items are waiting
               for you.
             </p>
