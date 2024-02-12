@@ -56,9 +56,7 @@ function HomePage() {
                   <div className="card-body mt-2">
                     <h6 className="title">Step 2</h6>
                     <p style={{ color: "white" }} className="card-text">
-                      Earn points for
-                    
-                      every $ spent
+                      Earn points for every $ spent
                     </p>
                   </div>
                 </div>
