@@ -30,7 +30,7 @@ function HomePage() {
 
         <div class="container ">
           <div className="iconsdiv ">
-            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
+            <div class="row   row-cols-2 row-cols-md-2 row-cols-lg-4">
               <div class="col ">
                 <div style={{ backgroundColor: "black" }} className="card ">
                   <div className="icon ">
@@ -53,7 +53,7 @@ function HomePage() {
                   <div className="icon">
                     <img className="iconimg" src="/images/subscribe 1.png" />
                   </div>
-                  <div className="card-body mt-2">
+                  <div className="card-body mt-2 s">
                     <h6 className="title">Step 2</h6>
                     <p style={{ color: "white" }} className="card-text">
                       Earn points for every $ spent
@@ -61,7 +61,7 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col mt-md-5 ">
                 <div style={{ backgroundColor: "black" }} className="card">
                   <div className="icon">
                     <img class="iconimg" src="/images/level-up 1.png" />
@@ -76,7 +76,7 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col mt-md-5 ">
                 <div style={{ backgroundColor: "black" }} className="card">
                   <div className="icon">
                     <img className="iconimg" src="/images/box (1) 1.png" />
