@@ -2,7 +2,16 @@ import React, { useContext, useEffect, useState } from "react";
 import "./header.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { motion } from "framer-motion";
-import logo from "../../Assets/images/logo.png";
+import logo1 from "../../Assets/images/logos/gif--1.gif";
+import logo2 from "../../Assets/images/logos/gif-2.gif";
+import logo3 from "../../Assets/images/logos/gif-3.gif";
+import logo4 from "../../Assets/images/logos/gif-4.gif";
+import logo5 from "../../Assets/images/logos/gif-5.gif";
+import logo6 from "../../Assets/images/logos/gif-6.gif";
+import logo7 from "../../Assets/images/logos/gif-7.gif";
+import logo8 from "../../Assets/images/logos/gif-8.gif";
+import logo9 from "../../Assets/images/logos/gif-9.gif";
+
 import InsightsIcon from "@mui/icons-material/Insights";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -12,61 +21,56 @@ import { Sidenavcontext } from "../..";
 import { display } from "@mui/system";
 
 function MyHeader() {
-  
   const { sidenav, setSidenav } = useContext(Sidenavcontext);
   const handleNavbarToggle = () => {
     setSidenav(!sidenav);
   };
 
-
-
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   useEffect(() => {
     const handleResize = () => {
-      console.log(window.innerWidth);
-      console.log(logos.length);
+    
       setIsMobile(window.innerWidth < 768);
-
- 
-
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Cleanup
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  let logos;
 
-  let logos
-
-  if(window.innerWidth < 768){
-      
+  if (window.innerWidth < 768) {
     logos = [
-       { src: logo, delay: 0 },
-       { src: logo, delay: 4 },
-       { src: logo, delay: 8 },
-   
-   
-       // Add more logo objects with different delays as needed
-     ];
-   
-   }
-   else{
-     
+      { src: logo3, delay: 0 },
+      { src: logo9, delay: 4 },
+
+      { src: logo1, delay: 8 },
+  
+
+      // Add more logo objects with different delays as needed
+    ];
+  } else {
     logos = [
-       { src: logo, delay: 0 },
-       { src: logo, delay: 4 },
-       { src: logo, delay: 8 },
-       { src: logo, delay: 8 },
-       { src: logo, delay: 12 },
-   
-       // Add more logo objects with different delays as needed
-     ];
-   }
+      { src: logo1, delay: 0 },
+      { src: logo2, delay: 4 },
+      { src: logo3, delay: 8 },
+      { src: logo5, delay: 12 },
 
+      { src: logo9, delay: 16 },
 
-console.log(logos.length % 2 );
+      { src: logo6, delay: 20 },
+
+      { src: logo7, delay: 24 },
+      { src: logo8, delay: 28 },
+      { src: logo4, delay: 32 },
+
+      // Add more logo objects with different delays as needed
+    ];
+  }
+
+  console.log(logos.length % 2);
   return (
     <nav
       className="navbar sticky-top  navbar"
@@ -83,16 +87,15 @@ console.log(logos.length % 2 );
         <a className="flex" href="#">
           <div style={{ position: "relative" }}>
             {logos.map((logo, index) => {
-              
-              if (index === Math.floor((0 + logos.length -1) / 2)) {
+              if (index === Math.floor((0 + logos.length - 1) / 2)) {
                 return (
                   <motion.img
                     key={index}
-                    src={logo.src}
+                    src={logo9}
                     alt="Oner Active Logo"
                     style={{
                       margin: "15px",
-                      width: "50px",
+                      width: "40px",
                       height: "40px",
                       opacity: 1, // You can set initial styles directly here
                     }}
@@ -112,9 +115,9 @@ console.log(logos.length % 2 );
                     }}
                     initial={{ opacity: 0 }} // Define initial state here
                     animate={{
-                      opacity: [0, 1, 1, 0, 0],
+                      opacity: [0, 1, 1, 0, 0,0,0,0,0],
                       transition: {
-                        duration: 16,
+                        duration: 36,
                         delay: logo.delay, // Ensure delay is respected for each logo
                         repeat: Infinity, // Use repeat: Infinity for continuous loop
                       },

@@ -17,7 +17,7 @@ function Footer() {
                     <h6  style={{fontWeight:800,marginLeft:"10px"}} className="text-uppercase ">OWPMF</h6>
                     <ul style={{ }} className="list-unstyled mb-0 container ">
                       <li>
-                        <a className="text-secondary" href="#!">About us</a>
+                        <a className="text-secondary" href="https://owpc.world/">About us</a>
                       </li>
                       <li>
                         <a className="text-secondary" href="#!">Term & Conditions</a>
