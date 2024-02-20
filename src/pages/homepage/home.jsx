@@ -333,7 +333,7 @@ function HomePage() {
                   </tr>
 
                   <tr>
-                    <td scope="row">Access to OWPC Wallet & Coin</td>
+                    <td scope="row">Access to OWPC Wallet</td>
                     <td>
                       <DoneIcon />
                     </td>
@@ -535,14 +535,12 @@ function HomePage() {
             </button>
           </div>
 
-          <div style={{ margin: "50px" }} className="">
+          {/* <div style={{ margin: "50px" }} className="">
             <video autoPlay muted loop width="100%" height="auto">
               <source src={video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-
-         
-          </div>
+          </div> */}
 
           <div></div>
 

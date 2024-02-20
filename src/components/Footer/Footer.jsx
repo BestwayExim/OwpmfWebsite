@@ -1,37 +1,49 @@
-import React from 'react'
+import React from "react";
 import "./Footer.css";
 
-import { Col, Container, Row } from 'react-bootstrap'
-
+import { Col, Container, Row } from "react-bootstrap";
 
 function Footer() {
   return (
     <div>
-        <Container>
-        <Row className='footerr'>
-           
-      <Col md={4} sm={6} xs={6} className=''> 
-      <Row >
-      <Col md={6} className=''>
-      <div style={{textAlign:"left"}} className='container'>
-                    <h6  style={{fontWeight:800,marginLeft:"10px"}} className="text-uppercase ">OWPMF</h6>
-                    <ul style={{ }} className="list-unstyled mb-0 container ">
-                      <li>
+      <Container>
+        <Row className="footerr">
+          <Col md={4} sm={6} xs={6} className="">
+            <Row>
+              <Col md={6} className="">
+                <div style={{ textAlign: "left" }} className="container">
+                  <h6
+                    style={{ fontWeight: 800, marginLeft: "10px" }}
+                    className="text-uppercase "
+                  >
+                    OWPMF
+                  </h6>
+                  <ul style={{}} className="list-unstyled mb-0 container ">
+                    {/* <li>
                         <a className="text-secondary" href="https://owpc.world/">About us</a>
-                      </li>
-                      <li>
-                        <a className="text-secondary" href="#!">Term & Conditions</a>
-                      </li>
-                      <li>
-                        <a className="text-secondary" href="#!">Privacy Policy</a>
-                      </li>
-                      <li>
-                      </li>
-                    </ul>
+                      </li> */}
+                    <li>
+                      <a
+                        className="text-secondary"
+                        href="https://owpcstorage.s3.ap-south-1.amazonaws.com/Terms+%26+Conditions-OWPMF.pdf"
+                      >
+                        Term & Conditions
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="text-secondary"
+                        href="https://owpcstorage.s3.ap-south-1.amazonaws.com/Privacy+Policy-OWPMF.pdf"
+                      >
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <li></li>
+                  </ul>
                 </div>
-      </Col>
-       
-      {/* <Col md={6} className='text-center container' >
+              </Col>
+
+              {/* <Col md={6} className='text-center container' >
       <div style={{textAlign:"left"}} className='top-catogry container  mt-5'>
       <h6  style={{fontWeight:800}} className="text-uppercase ">SERVICE</h6>
                     <ul className="list-unstyled mb-0">
@@ -71,14 +83,12 @@ function Footer() {
 
                
       </Col> */}
-    
+            </Row>
+          </Col>
 
-      </Row>
-      </Col>
-
-      <Col md={4}  sm={6} xs={6} className='text-center '> 
-      <Row >
-      {/* <Col md={6} className='text-center' >
+          <Col md={4} sm={6} xs={6} className="text-center ">
+            <Row>
+              {/* <Col md={6} className='text-center' >
       <div style={{textAlign:"left"}} className='top-catogry '>
                     <h6  style={{fontWeight:800}} className="text-uppercase ">TOP CATEGORIES
 </h6>
@@ -98,8 +108,8 @@ function Footer() {
                     </ul>
                 </div>
       </Col> */}
-       
-      {/* <Col md={6} >
+
+              {/* <Col md={6} >
       <div style={{textAlign:"left"}} className='top-reward'>
                     <h6 style={{fontWeight:800}} className="">REWARDS</h6>
                     <ul className="list-unstyled mb-0">
@@ -112,66 +122,127 @@ function Footer() {
                     </ul>
                 </div>
       </Col> */}
+            </Row>
+          </Col>
 
-      
-      </Row>
-      </Col> 
-
-      <Col md={4} className='container text-center' >
-       <Row className='main-contain ' >
-           <div className='input-boxs'>
-           {/* <h6 style={{fontWeight:700}} className="text-uppercase ms-4">SIGN UP FOR OUR NEWSLETTER</h6>
+          <Col md={4} className="container text-center">
+            <Row className="main-contain ">
+              <div className="input-boxs">
+                {/* <h6 style={{fontWeight:700}} className="text-uppercase ms-4">SIGN UP FOR OUR NEWSLETTER</h6>
            <input className='inpu' type='text' placeholder='email'/><button className='btn-last'><i class="fa-solid fa-greater-than" style={{color:'white'}}/></button>
              */}
-            <div className='out-log pt-1 '>
-                <div className="logg"><i class="fa-brands fa-instagram fa-lg" style={{color:"white"}}></i></div>
-                <div className="logg"><i class="fa-brands fa-facebook" style={{color:"white"}}></i></div>
-                <div className="logg"><i class="fa-brands fa-youtube" style={{color:"white"}}></i></div>
-                <div className="logg"><i class="fa-brands fa-tiktok" style={{color:"white"}}></i></div>
-                <div className="logg"><i class="fa-brands fa-twitter" style={{color:"white"}}></i></div>
-                <div className="logg"><i class="fa-brands fa-pinterest" style={{color:"white"}} ></i></div>
-                <div className="logg"><i class="fa-brands fa-square-snapchat" style={{color:"white"}}></i></div>
-            </div>
-            <div style={{padding:"20px" ,marginBottom:"30px"}} className='cardd mt-2'>
-<div className="pay">
-    <img src="https://cdn.shopify.com/s/files/1/0744/0203/files/payment-visa.svg?607402
-" alt="" />
-</div>
-<div className="pay">
-    <img src="	https://cdn.shopify.com/s/files/1/0744/0203/files/payment-paypal.svg?607402
-" alt="" />
-</div>
-<div className="pay">
-    <img src="https://cdn.shopify.com/s/files/1/0744/0203/files/payment-mastercard.svg?607402
-" alt="" />
-</div>
-<div className="pay">
-    <img src="	https://cdn.shopify.com/s/files/1/0744/0203/files/payment-american-express.svg?607402" style={{width:"30px"}} alt="" />
-</div>
-<div className="pay">
-    <img src="		https://cdn.shopify.com/s/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg
-" alt="" />
-</div>
+                <div className="out-log pt-1 ">
+                  <div className="logg">
+                    <i
+                      class="fa-brands fa-instagram fa-lg"
+                      style={{ color: "white" }}
+                    ></i>
+                  </div>
+                  <div className="logg">
+                    <i
+                      class="fa-brands fa-facebook"
+                      style={{ color: "white" }}
+                    ></i>
+                  </div>
+                  <div className="logg">
+                    <i
+                      class="fa-brands fa-youtube"
+                      style={{ color: "white" }}
+                    ></i>
+                  </div>
+                  <div className="logg">
+                    <i
+                      class="fa-brands fa-tiktok"
+                      style={{ color: "white" }}
+                    ></i>
+                  </div>
+                  <div className="logg">
+                    <i
+                      class="fa-brands fa-twitter"
+                      style={{ color: "white" }}
+                    ></i>
+                  </div>
+                  <div className="logg">
+                    <i
+                      class="fa-brands fa-pinterest"
+                      style={{ color: "white" }}
+                    ></i>
+                  </div>
+                  <div className="logg">
+                    <i
+                      class="fa-brands fa-square-snapchat"
+                      style={{ color: "white" }}
+                    ></i>
+                  </div>
+                </div>
+                <div
+                  style={{ padding: "20px", marginBottom: "30px" }}
+                  className="cardd mt-2"
+                >
+                  <div className="pay">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0744/0203/files/payment-visa.svg?607402
+"
+                      alt=""
+                    />
+                  </div>
+                  <div className="pay">
+                    <img
+                      src="	https://cdn.shopify.com/s/files/1/0744/0203/files/payment-paypal.svg?607402
+"
+                      alt=""
+                    />
+                  </div>
+                  <div className="pay">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0744/0203/files/payment-mastercard.svg?607402
+"
+                      alt=""
+                    />
+                  </div>
+                  <div className="pay">
+                    <img
+                      src="	https://cdn.shopify.com/s/files/1/0744/0203/files/payment-american-express.svg?607402"
+                      style={{ width: "30px" }}
+                      alt=""
+                    />
+                  </div>
+                  <div className="pay">
+                    <img
+                      src="		https://cdn.shopify.com/s/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg
+"
+                      alt=""
+                    />
+                  </div>
                 </div>
 
-            <div className='out-log pt-1 '>
-               <div className='LOG-last'>
-                <img src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/logo_icon_black.svg?v=1597160328" alt="" srcset="" />
-               </div>
-            </div>
-
-           </div>
-       </Row>
-      </Col>
-      
-
-    
+                <div className="out-log pt-1 ">
+                  <div className="LOG-last">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0429/6120/7445/files/logo_icon_black.svg?v=1597160328"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </Row>
+          </Col>
         </Row>
-        <div className='fw-bold  container ' style={{fontSize:"14px" ,textAlign:"center" ,color:"white", paddingBottom:"15px"}}>© 2024 OWPC Active | All Rights Reserved.</div>
-        </Container> 
-      
+        <div
+          className="fw-bold  container "
+          style={{
+            fontSize: "14px",
+            textAlign: "center",
+            color: "white",
+            paddingBottom: "15px",
+          }}
+        >
+          © 2024 OWPC Active | All Rights Reserved.
+        </div>
+      </Container>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
