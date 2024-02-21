@@ -12,7 +12,7 @@ function MyBanner() {
       <div style={{ color: "white" }} className="text">
         <h2>LOYALTY CLUB</h2>
         <p>
-          Welcome to the one world peace maker foundation.
+          Welcome to the one world peace maker foundation (OWPMF).
           <br />
           Become a member, collect peace points, and gain valuable benefits.
         </p>

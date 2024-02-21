@@ -28,7 +28,7 @@ function HomePage() {
           <h3 style={{ fontWeight: 600, color: "white" }}>HOW IT WORKS.</h3>
           <p className="p-3">
             Earn peace Points and redeem them when making purchases, upgrade
-            your tiers to get exclusive perks and benefit.
+            your tier to get exclusive perks and benefit.
           </p>
         </div>
 
