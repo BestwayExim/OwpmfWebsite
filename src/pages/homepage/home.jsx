@@ -27,9 +27,8 @@ function HomePage() {
         <div style={{ marginBottom: "90px" }} className="headingdiv ">
           <h3 style={{ fontWeight: 600, color: "white" }}>HOW IT WORKS.</h3>
           <p className="p-3">
-            Earn peace Points and redeem them when making purchases, level up
-            your member status to get exclusive perks, and benefit from
-            referring friends.
+            Earn peace Points and redeem them when making purchases, upgrade
+            your tiers to get exclusive perks and benefit.
           </p>
         </div>
 

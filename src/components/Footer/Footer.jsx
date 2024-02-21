@@ -238,7 +238,7 @@ function Footer() {
             paddingBottom: "15px",
           }}
         >
-          © 2024 OWPC Active | All Rights Reserved.
+          © 2024 OWPMF | All Rights Reserved.
         </div>
       </Container>
     </div>
