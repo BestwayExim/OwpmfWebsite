@@ -25,6 +25,22 @@ function Footer() {
                     <li>
                       <a
                         className="text-secondary"
+                        href="/pdf/Company Profile OWPMF LLC-FZ (1).pdf"
+                      >
+                        about us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="text-secondary"
+                        href="/pdf/Neutral Beige Minimalist Company Organizational Chart (1).pdf"
+                      >
+                        our team
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="text-secondary"
                         href="https://owpcstorage.s3.ap-south-1.amazonaws.com/Terms+%26+Conditions-OWPMF.pdf"
                       >
                         Term & Conditions

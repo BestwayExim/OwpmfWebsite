@@ -553,7 +553,7 @@ function HomePage() {
           </div>
           <div className="p-5 ">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.7045916121378!2d55.29880042533457!3d25.155657905637874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f688c5516ea0f%3A0x44800f32689f57e2!2sThe%20Meydan%20Hotel!5e0!3m2!1sen!2sin!4v1707421252815!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.3067173959103!2d55.3088196!3d25.1591193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d9df6f7449%3A0xbf716b497c93ca6c!2sONE%20WORLD%20PEACE%20MAKER%20FOUNDATION%20LLC-FZ!5e0!3m2!1sen!2sin!4v1708751369413!5m2!1sen!2sin"
               width="100%"
               height="300"
               allowfullscreen=""
