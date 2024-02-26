@@ -42,7 +42,7 @@ function MyHeader() {
       interval = setInterval(() => {
         setCurrentLogoSet((prevSet) => {
           const nextSet = prevSet === 0 ? 1 : 0;
-          console.log("15sec0nd");
+         
           setActiveLogs(nextSet === 0 ? logos : logos1); // Update the active logos based on the toggle
           return nextSet;
         });
