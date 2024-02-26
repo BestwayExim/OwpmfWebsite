@@ -27,25 +27,49 @@ function MyHeader() {
   };
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [activeLogos, setActiveLogs] = useState([]);
+  const [currentLogoSet, setCurrentLogoSet] = useState(0);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
     window.addEventListener("resize", handleResize);
-
-    // Cleanup
+    let interval;
+    if (isMobile) {
+      setActiveLogs(logos);
+      setCurrentLogoSet(1);
+      interval = setInterval(() => {
+        setCurrentLogoSet((prevSet) => {
+          const nextSet = prevSet === 0 ? 1 : 0;
+          console.log("15sec0nd");
+          setActiveLogs(nextSet === 0 ? logos : logos1); // Update the active logos based on the toggle
+          return nextSet;
+        });
+      }, 15000);
+    } else {
+      setActiveLogs(logos);
+    }
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   let logos;
-
+  let logos1;
   if (window.innerWidth < 768) {
     logos = [
-      { src: logo3, delay: 0 },
+      { src: logo2, delay: 0 },
+      { src: logo3, delay: 2 },
       { src: logo9, delay: 4 },
-      { src: logo1, delay: 8 },
+      { src: logo1, delay: 6 },
+      { src: logo4, delay: 8 },
       // Add more logo objects with different delays as needed
+    ];
+    logos1 = [
+      { src: logo6, delay: 0 },
+      { src: logo5, delay: 2 },
+      { src: logo9, delay: 4 },
+      { src: logo7, delay: 6 },
+      { src: logo8, delay: 8 },
     ];
   } else {
     logos = [
@@ -78,7 +102,7 @@ function MyHeader() {
       <div>
         <a className="flex" href="#">
           <div style={{ position: "relative" }}>
-            {logos.map((logo, index) => {
+            {activeLogos.map((logo, index) => {
               if (index === Math.floor((0 + logos.length - 1) / 2)) {
                 return (
                   <motion.img
@@ -109,7 +133,7 @@ function MyHeader() {
                     animate={{
                       opacity: [0, 1, 1, 0, 0, 0, 0, 0, 0],
                       transition: {
-                        duration: 36,
+                        duration: 16,
                         delay: logo.delay, // Ensure delay is respected for each logo
                         repeat: Infinity, // Use repeat: Infinity for continuous loop
                       },
