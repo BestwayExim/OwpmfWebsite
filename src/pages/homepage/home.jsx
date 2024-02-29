@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Home.css";
 // import MyBanner from "../../components/banner/Banner";
 import DoneIcon from "@mui/icons-material/Done";
@@ -8,7 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import Cards from "../../components/thirdSection/Cards";
 import CardGrid from "../../components/cardGrid/CardGrid";
 import FAQ from "../../components/FAQ/FaqPAge";
-import { QRCodeProvider } from "../..";
+import { QRCodeProvider, SetScrollProvaider } from "../..";
 import ReactPlayer from "react-player";
 
 // import JoinModal from "../../components/Modal/JoinModal";
@@ -16,13 +16,59 @@ import video from "../../Assets/Video.mp4";
 import TextField from "@mui/material/TextField";
 function HomePage() {
   const { show, handleClose } = useContext(QRCodeProvider);
-
+  const { setScrolled, isScrolled } = useContext(SetScrollProvaider);
   const [mute, setmute] = useState(true);
+  const [isAutoScrollEnabled, setAutoScrollEnabled] = useState(isScrolled);
 
   const [showModal, setModalOpen] = useState(false);
+  console.log(isScrolled, "scroll value is setd");
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setAutoScrollEnabled(false);
+    }, 1000);
+  }, []);
+
+  //   const handleScroll = () => {
+  //     if (isAutoScrollEnabled) return;
+
+  //     const element = document.getElementById("earnPointsSection");
+  //     if (!element) return;
+
+  //     const elementRect = element.getBoundingClientRect();
+  //     const viewportHeight = window.innerHeight;
+
+  //     const isNearCenter =
+  //       elementRect.top < viewportHeight / 4 &&
+  //       elementRect.bottom > viewportHeight / 4;
+
+  //     if (isNearCenter) {
+  //       window.scrollTo({
+  //         top:
+  //           window.scrollY +
+  //           elementRect.top -
+  //           viewportHeight / 4 +
+  //           elementRect.height / 4,
+  //         behavior: "smooth",
+  //       });
+  //     }
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     clearInterval(intervalId);
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [isScrolled, setScrolled, isAutoScrollEnabled]);
+
+  // Function to handle manual scroll
+  // const handleManualScroll = () => {
+  //   // Disable automatic scrolling when the user manually scrolls
+  //   // setAutoScrollEnabled(false);
+  // };
   return (
     <div className="full_div">
       {/* <JoinModal isModalOpen={setModalOpen} showModal={showModal} /> */}
+      <div id="howitworks"></div>
       <div className="">
         <div style={{ marginBottom: "90px" }} className="headingdiv ">
           <h3 style={{ fontWeight: 600, color: "white" }}>HOW IT WORKS.</h3>
@@ -102,7 +148,7 @@ function HomePage() {
             JOIN NOW
           </button>
         </div>
-
+        <div id="earnPointsSection"></div>
         <p style={{ textAlign: "center", marginBottom: " 3%" }}></p>
         <div className="seconthead" style={{ textAlign: "center" }}>
           <div className="seconthead mt-7  " style={{ textAlign: "center" }}>
@@ -254,6 +300,7 @@ function HomePage() {
           {/* secondSection end Now */}
 
           {/*third Start */}
+          <div id="memberStatus"></div>
           <div
             className=" mt-5"
             style={{ textAlign: "center", marginBottom: "3%" }}

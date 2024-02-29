@@ -10,7 +10,9 @@ function MyBanner() {
       {/* <img src="https://www.oneractive.com/cdn/shop/files/ONER_LoyaltyClubHeadBanner_desktop_ms_20200825.png?v=1600256838" className='img1' alt="" /> */}
 
       <div style={{ color: "white" }} className="text">
-        <h2>LOYALTY CLUB</h2>
+        <h2>
+          LOYALTY CLUB<p className="text-sm">(One stop ecomerce platform)</p>
+        </h2>
         <p>
           Welcome to the one world peace maker foundation (OWPMF).
           <br />

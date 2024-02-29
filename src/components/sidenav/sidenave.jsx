@@ -4,8 +4,12 @@ import { Nav, Dropdown, NavItem, NavLink } from "react-bootstrap";
 import { Sidenavcontext } from "../..";
 function Mysidenav() {
   const { sidenav } = useContext(Sidenavcontext);
+  console.log(sidenav, "in sid bar");
   return (
-    <div className={sidenav ? "mysidnav" : "mysidnav1"}>
+    <div
+      className={sidenav ? "mysidnav" : "mysidnav1"}
+      // style={{ width: `${sidenav ? "200px" : "0"}` }}
+    >
       <Nav defaultActiveKey="/home" className="flex-column text-center">
         <Nav.Item as="li">
           <Nav.Link href="/home">Active</Nav.Link>

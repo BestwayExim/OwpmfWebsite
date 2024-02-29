@@ -1,19 +1,18 @@
 .banner {
   position: relative;
   width: 100%;
-  background: url("../../Assets//images//card.gif");
+  background: url("../../Assets//images//owpmfbanner.gif");
   height: 400px;
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-h2{
+h2 {
   color: white;
 }
-p{
+p {
   color: white;
-  
 }
 .banner2 {
   position: relative;
@@ -43,7 +42,7 @@ p{
 
 .btns {
   /* background-color: black; */
-  background: #F0B90A;
+  background: #f0b90a;
   color: white;
   color: white;
   border-radius: 20px;
@@ -57,7 +56,7 @@ p{
   background-color: #dbab0b; /* Change the background color on hover */
 }
 .btns_small {
-  background-color: #F0B90A  ;
+  background-color: #f0b90a;
   color: white;
   border-radius: 20px;
   border: none;
@@ -79,7 +78,7 @@ p{
   .text {
     position: absolute;
     width: 40%;
-    height: 200px;
+    height: 300px;
     top: 15%;
     left: 10%;
 
@@ -100,12 +99,11 @@ p{
 
   .banner {
     background: url("../../Assets//images//cardmobile.gif");
-    height: 300px;
+    height: 380px;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
   }
   .img1 {
     display: none;

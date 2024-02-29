@@ -3,14 +3,14 @@
   top: 50px;
   color: white;
   width: 200px;
-  color: black;
+  color: white;
   height: calc(100vh - 50px);
-  background-color: #0e0e0e;
+  background-color: black;
 
   z-index: 1;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px; /* Add transition property */
+  padding-top: 60px;
 }
 
 .mysidnav1 {
@@ -19,7 +19,7 @@
   height: 0;
   transition: 0.5s; /* Add transition property */
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 652px) {
   .mysidnav {
     width: 0;
     height: 0;

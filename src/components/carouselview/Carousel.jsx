@@ -5,17 +5,22 @@ function CarouselBar() {
   return (
     <div
       style={{
-        height: "30px",
-        position: "relative",
+        backgroundColor: "black",
+        //  height: "40px",
+        // position: "relative",
         width: "100%",
-
+        color: "white",
         alignItems: "center",
         justifyContent: "center",
+
         display: "flex",
-        marginBottom: ".5%",
+        // marginBottom: ".5%",
       }}
     >
-      <Carousel
+      <h1 style={{ padding: "4%" }}>
+        ONE WORLD PEACEMAKER FOUNDATION L.L.C-FZ
+      </h1>
+      {/* <Carousel
         style={{
           width: "90%",
           height: "20px",
@@ -71,7 +76,7 @@ function CarouselBar() {
             <span class="oa-header_shipping1-text">Easy returns</span>
           </a>
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 }

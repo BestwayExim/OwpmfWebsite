@@ -27,7 +27,7 @@ function Footer() {
                         className="text-secondary"
                         href="/pdf/Company Profile OWPMF LLC-FZ (1).pdf"
                       >
-                        about us
+                        About US
                       </a>
                     </li>
                     <li>
@@ -35,7 +35,7 @@ function Footer() {
                         className="text-secondary"
                         href="/pdf/Neutral Beige Minimalist Company Organizational Chart (1).pdf"
                       >
-                        our team
+                        Our Team
                       </a>
                     </li>
                     <li>

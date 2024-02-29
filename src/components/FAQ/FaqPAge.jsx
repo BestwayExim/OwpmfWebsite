@@ -35,7 +35,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="faq-container">
+    <div className="faq-container " id="faq">
       <div className="faq-section">
         <h4
           style={{ fontWeight: 700, color: "white" }}

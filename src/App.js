@@ -15,13 +15,12 @@ function App() {
   return (
     <>
       <MyHeader />
-      {/* <CarouselBar /> */}
+      <CarouselBar />
       <MyBanner />
       <HomePage />
       <Mysidenav />
       <MessageBox />
-<QRModal/>
-
+      <QRModal />
     </>
   );
 }
