@@ -12,17 +12,22 @@
   transition: 0.5s;
   padding-top: 60px;
 }
-
+.mysidnav .linkdiv {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 10%;
+}
 .mysidnav1 {
   width: 0;
   overflow: hidden;
   height: 0;
   transition: 0.5s; /* Add transition property */
 }
-@media screen and (min-width: 652px) {
+/* @media screen and (min-width: 652px) {
   .mysidnav {
     width: 0;
     height: 0;
     overflow: hidden;
   }
-}
+} */

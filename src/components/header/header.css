@@ -110,6 +110,27 @@ body {
   .hide-on-mobile-except-center {
     display: none;
   }
+  /* .hideClass {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    display: block;
+  }
+  .togbtn {
+    display: inline-block; 
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #686503;
+  } */
+}
+@media (max-width: 998px) {
   .hideClass {
     width: 0px;
     height: 0px;
