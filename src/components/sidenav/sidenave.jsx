@@ -4,7 +4,7 @@ import { Nav, Dropdown, NavItem, NavLink } from "react-bootstrap";
 import { Sidenavcontext } from "../..";
 import { Link } from "react-scroll";
 function Mysidenav() {
-  const { sidenav } = useContext(Sidenavcontext);
+  const { sidenav, setSidenav } = useContext(Sidenavcontext);
   console.log(sidenav, "in sid bar");
   return (
     <div
@@ -12,7 +12,11 @@ function Mysidenav() {
       // style={{ width: `${sidenav ? "200px" : "0"}` }}
     >
       <div className="linkdiv" style={{ marginTop: "30%" }}>
-        <Link to="howitworks" className="navbar-a">
+        <Link
+          to="howitworks"
+          className="navbar-a"
+          // onClick={() => setSidenav(false)}
+        >
           How It Works
         </Link>
       </div>

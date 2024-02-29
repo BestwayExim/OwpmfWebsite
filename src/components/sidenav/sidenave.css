@@ -24,10 +24,10 @@
   height: 0;
   transition: 0.5s; /* Add transition property */
 }
-/* @media screen and (min-width: 652px) {
+@media screen and (min-width: 652px) {
   .mysidnav {
     width: 0;
     height: 0;
     overflow: hidden;
   }
-} */
+}
